@@ -48,8 +48,12 @@ Voor het JavaFX toetsenbord werk ik met verschillende containers:
 * Sla je fxml bestand op en ga naar de Controller class waar we de methode zullen testen.
 * Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als String.
 * Je methode in de Controller class heeft een ActionEvent als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste Button geraken met actionEvent.getSource\(\)  getSource\(\) geeft een object van het type Object. We moeten deze nog casten \(=omzetten\) naar een button. Dan kunnen we met getText\(\) de letter die erop staat uitlezen.
-* \`\`\` public voidbuttonPressed\(ActionEvent actionEvent\) {  Button b = \(Button\)actionEvent.getSource\(\); System.out.println\(b.getText\(\)\); }
-* Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
+
+\`\`\`java public void buttonPressed\(ActionEvent actionEvent\) {  Button b = \(Button\)actionEvent.getSource\(\); System.out.println\(b.getText\(\)\); }
+
+\`\`\`
+
+* * Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
 
 ## STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
 
