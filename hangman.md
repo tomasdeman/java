@@ -24,25 +24,17 @@ Je moet beslissen op welke manier je door de gebruiker een letter laat ingeven.
 
 Enkele opties:
 
-1.Je kan een TextField maken met een knop naast.  
- Welke voor- en nadelen zijn hieraan verbonden?
-
-2.Je kan een ComboBox gebruiken.  
- Welke voor- en nadelen zijn hieraan verbonden?
-
-3.Je kan een volledig toetsenbord creëren met Buttons.  
- Welke voor- en nadelen zijn hieraan verbonden?
-
-4.Je kan zelfs een KeyListener implementeren die als het ware luistert of er een toets wordt ingedrukt en hier dan op reageert.  
- Welke voor- en nadelen zijn hieraan verbonden?
-
-5.…
+1. Je kan een TextField maken met een knop naast. Welke voor- en nadelen zijn hieraan verbonden?
+2. Je kan een ComboBox gebruiken. Welke voor- en nadelen zijn hieraan verbonden?
+3. Je kan een volledig toetsenbord creëren met Buttons. Welke voor- en nadelen zijn hieraan verbonden?
+4. Je kan zelfs een KeyListener implementeren die als het ware luistert of er een toets wordt ingedrukt en hier dan op reageert. Welke voor- en nadelen zijn hieraan verbonden?
+5. …
 
 Kies momenteel voor een invoermethode die je reeds kan implementeren en toch zo duidelijk mogelijk is.
 
 Ik koos voor methode 3. Uiteraard mag jij ook een andere methode kiezen.
 
-![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image006.png)
+![](/assets/implementation.png)
 
 Voor het JavaFX toetsenbord werk ik met verschillende containers:
 
