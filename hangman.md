@@ -1,23 +1,24 @@
 # Project Hangman
 
-\#\#STAP 1: Project Management
+## STAP 1: Project Management
 
-Maak een account aan op Trello.com. Hier kan je per project een nieuw bord aanmaken.  
- Maak hierop het Bord “Java: Hangman” aan.
+Maak een account aan op Trello.com. Hier kan je per project een nieuw bord aanmaken.   
+Maak hierop het Bord “Java: Hangman” aan.
 
 In elk project dat we met Trello willen managen, maken we vier kaarten aan:  
- Backlog, TODO, WIP \(work in progress\), DONE.  
- Initiëel plaats je al je ideeën op de backlog kaart, hoe vergezocht deze ook mogen lijken. In het geval van een software project maak je hier een user story van \(x moet y kunnen zodat z\).
+Backlog, TODO, WIP \(work in progress\), DONE.
+
+Initiëel plaats je al je ideeën op de backlog kaart, hoe vergezocht deze ook mogen lijken. In het geval van een software project maak je hier een user story van \(x moet y kunnen zodat z\).
 
 Daarna overloop je welke user stories noodzakelijk zijn om je project als geslaagd te beschouwen. We noemen dat het MVP \(Minimum Viable Project\). Deze ideeën verplaats je naar de TODO kaart.  
- Je kiest dan een idee van TODO dat je gaat implementeren en sleept dit naar WIP.  
- Als het volledig af is, kan je dit bij DONE zetten.
+Je kiest dan een idee van TODO dat je gaat implementeren en sleept dit naar WIP.  
+Als het volledig af is, kan je dit bij DONE zetten.
 
 Hieronder vind je de functionaliteit die minimaal \(=MVP\) nodig is om Hangman te kunnen spelen. Soms heb ik in de oplossing verschillende functionaliteiten tegelijk opgelost. Test elk stukje code je schrijft direct, zodat je niet op het einde alle fouten moet debuggen!
 
-![](file:////Users/tomasdeman/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image002.png "http://www.ebhasin.com/games/games-source/javascript/Hang-Man-\(Tamil-Movies\)/src/pics/h0.png")![](file:////Users/tomasdeman/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image004.png)
+![](/assets/import.png)
 
-STAP 2: Als rader moet ik een letter kunnen ingeven, zodat ik het spel kan spelen
+## STAP 2: Als rader moet ik een letter kunnen ingeven, zodat ik het spel kan spelen
 
 Je moet beslissen op welke manier je door de gebruiker een letter laat ingeven.
 
@@ -41,7 +42,7 @@ Kies momenteel voor een invoermethode die je reeds kan implementeren en toch zo 
 
 Ik koos voor methode 3. Uiteraard mag jij ook een andere methode kiezen.
 
-![](file:////Users/tomasdeman/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image006.png)
+![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image006.png)
 
 Voor het JavaFX toetsenbord werk ik met verschillende containers:
 
@@ -50,7 +51,7 @@ Voor het JavaFX toetsenbord werk ik met verschillende containers:
 ·Ook kan je nu je eerste Hbox dupliceren om een nieuwe rij te maken.  
  Daarna stop je al je HBox containers in een VBox container om deze onder elkaar te plaatsen.
 
-·![](file:////Users/tomasdeman/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image008.png)Controleer in al je containers de spatiëring \(Padding en Spacing bij Layout\).
+·![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image008.png)Controleer in al je containers de spatiëring \(Padding en Spacing bij Layout\).
 
 ·Laat ook de Preferred Width en Height door de computer berekenen.
 
@@ -58,7 +59,7 @@ Voor het JavaFX toetsenbord werk ik met verschillende containers:
 
 ·Ga op één van de rode verwijzingen staan en druk op ALT-ENTER.
 
-·![](file:////Users/tomasdeman/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image010.png)Laat IDEA de methode creëren in de Controller class.
+·![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image010.png)Laat IDEA de methode creëren in de Controller class.
 
 ·Sla je fxml bestand op en ga naar de Controller class waar we de methode zullen testen.
 
@@ -72,11 +73,9 @@ public voidbuttonPressed\(ActionEvent actionEvent\) {
 System.out.println\(b.getText\(\)\);  
 }
 
-
-
 ·Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
 
-STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
+## STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
 
 De toestand van het spel en de methodes om een gok te doen, stop je best in een aparte nieuwe klasse Game zodat de spellogica volledig gescheiden is van de layout of GUI \(Graphical User Interface\).
 
@@ -103,8 +102,6 @@ letter) {
 
 }
 ```
-
-
 
 Deze moet kijken of de letter in het antwoord voorkomt en deze ofwel aan de hits String toevoegen ofwel aan de misses String.
 
@@ -162,8 +159,6 @@ game
 }
 ```
 
-
-
 Wanneer moet deze methode aangeroepen worden?
 
 Het progress Label vul je door met een herhaling elke letter uit het antwoord te doorlopen en te controleren of deze al in de hits String aanwezig is. Als hij aanwezig is toon je de letter, anders een underscore.
@@ -171,35 +166,11 @@ Het progress Label vul je door met een herhaling elke letter uit het antwoord te
 Na elke letter of underscore plaats je best een spatie voor de leesbaarheid. Aangezien jullie nog geen herhaling van dit type gebruikt hebben, geef ik je de code.  
 Probeer deze wel te begrijpen!
 
-```
-public 
-String 
-getProgress
-() {
-
-
-
-
-String progress = 
-"
-"
-;
-
-
-
-
-for 
-(
-char 
-letter : 
-answer
-.toCharArray()) {
-
-
-char 
-display = 
-'_'
-;
+```java
+public String getProgress() {
+    String progress = "";
+    for (char letter : answer.toCharArray()) {
+        char display = '_';
 
 
 if 
