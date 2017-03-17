@@ -2,7 +2,7 @@
 
 ## STAP 1: Project Management
 
-Maak een account aan op Trello.com. Hier kan je per project een nieuw bord aanmaken.   
+Maak een account aan op [Trello.com](http://www.trello.com). Hier kan je per project een nieuw bord aanmaken.  
 Maak hierop het Bord “Java: Hangman” aan.
 
 In elk project dat we met Trello willen managen, maken we vier kaarten aan:  
