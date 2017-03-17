@@ -49,7 +49,9 @@ Voor het JavaFX toetsenbord werk ik met verschillende containers:
 * Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als String.
 * Je methode in de Controller class heeft een ActionEvent als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste Button geraken met actionEvent.getSource\(\)  getSource\(\) geeft een object van het type Object. We moeten deze nog casten \(=omzetten\) naar een button. Dan kunnen we met getText\(\) de letter die erop staat uitlezen.
 
-\`\`\`java public void buttonPressed\(ActionEvent actionEvent\) {  Button b = \(Button\)actionEvent.getSource\(\); System.out.println\(b.getText\(\)\); }
+\`\`\`java 
+
+public void buttonPressed\(ActionEvent actionEvent\) {  Button b = \(Button\)actionEvent.getSource\(\); System.out.println\(b.getText\(\)\); }
 
 \`\`\`
 
