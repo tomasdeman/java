@@ -38,34 +38,18 @@ Ik koos voor methode 3. Uiteraard mag jij ook een andere methode kiezen.
 
 Voor het JavaFX toetsenbord werk ik met verschillende containers:
 
-·Een rij Buttons maak je door verschillende Buttons in een HBox container te stoppen. Hiervoor maak je best 1 Button, laat je zijn on action gebeurtenis wijzen naar een zelfgekozen methode \(bvb. buttonPressed\) uit de Controller klasse \(bvb sample.Controller of een eigen gekozen package/klasse combinatie\). Je kan al je Buttons naar deze zelfde methode laten verwijzen, dus je kan deze gewoon dupliceren.
-
-·Ook kan je nu je eerste Hbox dupliceren om een nieuwe rij te maken.  
- Daarna stop je al je HBox containers in een VBox container om deze onder elkaar te plaatsen.
-
-·![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image008.png)Controleer in al je containers de spatiëring \(Padding en Spacing bij Layout\).
-
-·Laat ook de Preferred Width en Height door de computer berekenen.
-
-·Als al je Buttons op de Scene staan, druk je op CTRL-S \(opslaan\) en ga je in IntelliJ IDEA naar je fxml bestand. Normaalgezien staan daar 26 verwijzingen in het rood gemarkeerd, omdat de methode in de Controller waar de Buttons naar verwijzen niet bestaat.
-
-·Ga op één van de rode verwijzingen staan en druk op ALT-ENTER.
-
-·![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image010.png)Laat IDEA de methode creëren in de Controller class.
-
-·Sla je fxml bestand op en ga naar de Controller class waar we de methode zullen testen.
-
-·Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als String.
-
-·Je methode in de Controller class heeft een ActionEvent als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste Button geraken met actionEvent.getSource\(\)  
- getSource\(\) geeft een object van het type Object. We moeten deze nog casten \(=omzetten\) naar een button. Dan kunnen we met getText\(\) de letter die erop staat uitlezen.
-
-public voidbuttonPressed\(ActionEvent actionEvent\) {  
- Button b = \(Button\)actionEvent.getSource\(\);  
-System.out.println\(b.getText\(\)\);  
-}
-
-·Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
+* Een rij Buttons maak je door verschillende Buttons in een HBox container te stoppen. Hiervoor maak je best 1 Button, laat je zijn on action gebeurtenis wijzen naar een zelfgekozen methode \(bvb. buttonPressed\) uit de Controller klasse \(bvb sample.Controller of een eigen gekozen package/klasse combinatie\). Je kan al je Buttons naar deze zelfde methode laten verwijzen, dus je kan deze gewoon dupliceren.
+* Ook kan je nu je eerste Hbox dupliceren om een nieuwe rij te maken.  Daarna stop je al je HBox containers in een VBox container om deze onder elkaar te plaatsen.
+* ![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image008.png)Controleer in al je containers de spatiëring \(Padding en Spacing bij Layout\).
+* Laat ook de Preferred Width en Height door de computer berekenen.
+* Als al je Buttons op de Scene staan, druk je op CTRL-S \(opslaan\) en ga je in IntelliJ IDEA naar je fxml bestand. Normaalgezien staan daar 26 verwijzingen in het rood gemarkeerd, omdat de methode in de Controller waar de Buttons naar verwijzen niet bestaat.
+* Ga op één van de rode verwijzingen staan en druk op ALT-ENTER.
+* ![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image010.png)Laat IDEA de methode creëren in de Controller class.
+* Sla je fxml bestand op en ga naar de Controller class waar we de methode zullen testen.
+* Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als String.
+* Je methode in de Controller class heeft een ActionEvent als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste Button geraken met actionEvent.getSource\(\)  getSource\(\) geeft een object van het type Object. We moeten deze nog casten \(=omzetten\) naar een button. Dan kunnen we met getText\(\) de letter die erop staat uitlezen.
+* \`\`\` public voidbuttonPressed\(ActionEvent actionEvent\) {  Button b = \(Button\)actionEvent.getSource\(\); System.out.println\(b.getText\(\)\); }
+* Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
 
 ## STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
 
@@ -80,18 +64,9 @@ In de constructor geef je als parameter het antwoord mee. Eventueel zet je hier 
 
 Maak nu een methode applyGuess die als argument de gok meekrijgt:
 
-```
-public void 
-applyGuess
-(
-char 
-letter) {
-
-
-…
-
-
-
+```java
+public void applyGuess(char letter) {
+    …
 }
 ```
 
