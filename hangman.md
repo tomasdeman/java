@@ -23,10 +23,10 @@ Je moet beslissen op welke manier je door de gebruiker een letter laat ingeven.
 
 Enkele opties:
 
-1. Je kan een TextField maken met een knop naast. Welke voor- en nadelen zijn hieraan verbonden?
-2. Je kan een ComboBox gebruiken. Welke voor- en nadelen zijn hieraan verbonden?
-3. Je kan een volledig toetsenbord creëren met Buttons. Welke voor- en nadelen zijn hieraan verbonden?
-4. Je kan zelfs een KeyListener implementeren die als het ware luistert of er een toets wordt ingedrukt en hier dan op reageert. Welke voor- en nadelen zijn hieraan verbonden?
+1. Je kan een `TextField` maken met een knop naast. Welke voor- en nadelen zijn hieraan verbonden?
+2. Je kan een `ComboBox` gebruiken. Welke voor- en nadelen zijn hieraan verbonden?
+3. Je kan een volledig toetsenbord creëren met `Button` objecten. Welke voor- en nadelen zijn hieraan verbonden?
+4. Je kan zelfs een `KeyListener` implementeren die als het ware luistert of er een toets wordt ingedrukt en hier dan op reageert. Welke voor- en nadelen zijn hieraan verbonden?
 5. …
 
 Kies momenteel voor een invoermethode die je reeds kan implementeren en toch zo duidelijk mogelijk is.
@@ -37,16 +37,22 @@ Ik koos voor methode 3. Uiteraard mag jij ook een andere methode kiezen.
 
 Voor het JavaFX toetsenbord werk ik met verschillende containers:
 
-* Een rij Buttons maak je door verschillende Buttons in een HBox container te stoppen. Hiervoor maak je best 1 Button, laat je zijn on action gebeurtenis wijzen naar een zelfgekozen methode \(bvb. buttonPressed\) uit de Controller klasse \(bvb sample.Controller of een eigen gekozen package/klasse combinatie\). Je kan al je Buttons naar deze zelfde methode laten verwijzen, dus je kan deze gewoon dupliceren.
-* Ook kan je nu je eerste Hbox dupliceren om een nieuwe rij te maken.  Daarna stop je al je HBox containers in een VBox container om deze onder elkaar te plaatsen.
-* ![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image008.png)Controleer in al je containers de spatiëring \(Padding en Spacing bij Layout\).
+* Een rij `Button` objecten maak je door verschillende Buttons in een `HBox` container te stoppen. Hiervoor maak je best 1 `Button`, laat je zijn on action gebeurtenis wijzen naar een zelfgekozen methode \(bvb. `buttonPressed`\) uit de Controller klasse \(bvb `sample`.`Controller` of een eigen gekozen package/klasse combinatie\). Je kan al je `Button` objecten naar deze zelfde methode laten verwijzen, dus je kan deze gewoon dupliceren.
+* Ook kan je nu je eerste `Hbox` dupliceren om een nieuwe rij te maken.  Daarna stop je al je `HBox` containers in een `VBox`  om deze onder elkaar te plaatsen.
+* Controleer in al je containers de spatiëring \(Padding en Spacing bij Layout\).
+
+![](/assets/spacing.png)
+
 * Laat ook de Preferred Width en Height door de computer berekenen.
-* Als al je Buttons op de Scene staan, druk je op CTRL-S \(opslaan\) en ga je in IntelliJ IDEA naar je fxml bestand. Normaalgezien staan daar 26 verwijzingen in het rood gemarkeerd, omdat de methode in de Controller waar de Buttons naar verwijzen niet bestaat.
-* Ga op één van de rode verwijzingen staan en druk op ALT-ENTER.
-* ![](file:////Users/tomasdeman/Library/Group Containers/UBF8T346G9.Office/msoclip1/01/clip_image010.png)Laat IDEA de methode creëren in de Controller class.
-* Sla je fxml bestand op en ga naar de Controller class waar we de methode zullen testen.
-* Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als String.
-* Je methode in de Controller class heeft een ActionEvent als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste Button geraken met actionEvent.getSource\(\)  getSource\(\) geeft een object van het type Object. We moeten deze nog casten \(=omzetten\) naar een button. Dan kunnen we met getText\(\) de letter die erop staat uitlezen.
+* Als al je `Button` objecten op de `Scene` staan, druk je op _CTRL-S_ \(opslaan\) en ga je in IntelliJ IDEA naar je fxml bestand. Normaalgezien staan daar 26 verwijzingen in het rood gemarkeerd, omdat de void methode `buttonPressed` in de Controller waar de Buttons naar verwijzen niet bestaat.
+* Ga op één van de rode verwijzingen staan en druk op _ALT-ENTER_.
+* Laat IDEA de methode creëren in de `Controller` class.
+
+![](/assets/createmethod.png)
+
+* Sla je fxml bestand op en ga naar de `Controller` class waar we de methode zullen testen.
+* Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als `String`.
+* Je methode in de `Controller` class heeft een `ActionEvent` als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste `Button` geraken met `actionEvent.getSource()  getSource() `geeft een object van het type `Object`. We moeten deze nog casten \(=omzetten\) naar een `Button`. Dan kunnen we met `getText()` de letter die erop staat uitlezen.
 
 ```java
 public void buttonPressed(ActionEvent actionEvent) {  
@@ -54,8 +60,6 @@ public void buttonPressed(ActionEvent actionEvent) {
     System.out.println(b.getText()); 
 }
 ```
-
-
 
 * * Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
 
