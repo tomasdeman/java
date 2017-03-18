@@ -52,23 +52,17 @@ Het algoritme werkt als volgt.
 
    1. Zet de eerste twee indexen van de array `priem` op false. We weten namelijk dat 0 en 1 geen priemgetallen zijn.
 
-   2. Als je een priemgetal tegenkomt, moet je in de array `priem` alle veelvouden van dit priemgetal schrappen.
+   2. Als je een priemgetal tegenkomt, moet je in de array `priem` alle veelvouden van dit priemgetal schrappen. Dit doe je door steeds een nieuwe lus te starten bij elk priemgetal je tegenkomt. Makkelijkst is dit binnen een andere methode te doen.
 
-   3. Het volgende element van de array
+   3. Als je buitenste lus het maximum bereikt heeft, heb je alle priemgetallen gevonden.
 
 4. Druk deze getallen af op de terminal \(10 per lijn\).
 
-Wil je bijvoorbeeld de priemgetallen bepalen tot aan 1000, dan ga je als volgt te werk:
-
-Schrijf alle getallen van 2 tot 1000 op.
-
-Schrap alle veelvouden van 2.
-
-Het eerstvolgende getal dat nog niet geschrapt is, is 3. Schrap nu alle veelvouden van 3.
-
+Wil je bijvoorbeeld de priemgetallen bepalen tot aan 1000, dan ga je als volgt te werk:  
+Schrijf alle getallen van 2 tot 1000 op.   
+Schrap alle veelvouden van 2.  
+Het eerstvolgende getal dat nog niet geschrapt is, is 3. Schrap nu alle veelvouden van 3.  
 Het eerstvolgende getal dat nog niet geschrapt is, is 5. Schrap nu alle veelvouden van 5.
 
 Door deze methode voldoende lang vol te houden vind je alle priemgetallen tussen 0 en 1000.
-
-Als scherm‐output moet je ongeveer onderstaande bekomen:
 
