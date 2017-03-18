@@ -44,15 +44,15 @@ Voor het JavaFX toetsenbord werk ik met verschillende containers:
 ![](/assets/spacing.png)
 
 * Laat ook de Preferred Width en Height door de computer berekenen.
-* Als al je `Button` objecten op de `Scene` staan, druk je op _CTRL-S_ \(opslaan\) en ga je in IntelliJ IDEA naar je fxml bestand. Normaalgezien staan daar 26 verwijzingen in het rood gemarkeerd, omdat de void methode `buttonPressed` in de Controller waar de Buttons naar verwijzen niet bestaat.
+* Als al je `Button` objecten op de `Scene` staan, druk je op _CTRL-S_ \(opslaan\) en ga je in IntelliJ IDEA naar je _.fxml_ bestand. Normaalgezien staan daar 26 verwijzingen in het rood gemarkeerd, omdat de void methode `buttonPressed` in de Controller waar de Buttons naar verwijzen niet bestaat.
 * Ga op één van de rode verwijzingen staan en druk op _ALT-ENTER_.
 * Laat IDEA de methode creëren in de `Controller` class.
 
 ![](/assets/createmethod.png)
 
-* Sla je fxml bestand op en ga naar de `Controller` class waar we de methode zullen testen.
+* Sla je _.fxml_ bestand op en ga naar de `Controller` class waar we de methode zullen testen.
 * Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als `String`.
-* Je methode in de `Controller` class heeft een `ActionEvent` als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste `Button` geraken met `actionEvent.getSource()  getSource() `geeft een object van het type `Object`. We moeten deze nog casten \(=omzetten\) naar een `Button`. Dan kunnen we met `getText()` de letter die erop staat uitlezen.
+* Je methode in de `Controller` class heeft een `ActionEvent` als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste `Button` geraken met `actionEvent.getSource()  getSource()`geeft een object van het type `Object`. We moeten deze nog casten \(=omzetten\) naar een `Button`. Dan kunnen we met `getText()` de letter die erop staat uitlezen.
 
 ```java
 public void buttonPressed(ActionEvent actionEvent) {  
@@ -65,16 +65,16 @@ public void buttonPressed(ActionEvent actionEvent) {
 
 ## STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
 
-De toestand van het spel en de methodes om een gok te doen, stop je best in een aparte nieuwe klasse Game zodat de spellogica volledig gescheiden is van de layout of GUI \(Graphical User Interface\).
+De toestand van het spel en de methodes om een gok te doen, stop je best in een aparte nieuwe klasse `Game` zodat de spellogica volledig gescheiden is van de layout of GUI \(Graphical User Interface\).
 
-De Controller klasse kan dan de nodige methodes in de Game klasse aanroepen waar nodig.  
- Als we ooit onze Scene willen veranderen en bijgevolg onze Controller willen wijzigen, kan dat dan zonder iets aan de Game class te moeten veranderen.
+De `Controller` klasse kan dan de nodige methodes in de `Game` klasse aanroepen waar nodig.  
+ Als we ooit onze `Scene` willen veranderen en bijgevolg onze `Controller` willen wijzigen, kan dat dan zonder iets aan de `Game` class te moeten veranderen.
 
-De Game class houdt het juiste antwoord bij, alsook een private String met de missers en een String met de hits. Maak hier dan getter functies \(accessoren\) voor.
+De `Game` class houdt het juiste antwoord bij, alsook een `private String` met de missers en een `String` met de hits. Maak hier dan getter functies \(accessoren\) voor.
 
-In de constructor geef je als parameter het antwoord mee. Eventueel zet je hier het antwoord om naar hoofdletters zodat je niet op kleine letters moet controleren. Ook initialiseer je hier de Strings hits en misses naar “”.
+In de constructor geef je als parameter het antwoord mee. Eventueel zet je hier het antwoord om naar hoofdletters zodat je niet op kleine letters moet controleren. Ook initialiseer je hier de `String` objecten hits en misses naar `""`.
 
-Maak nu een methode applyGuess die als argument de gok meekrijgt:
+Maak nu een methode `applyGuess` die als argument de gok meekrijgt:
 
 ```java
 public void applyGuess(char letter) {
@@ -82,110 +82,46 @@ public void applyGuess(char letter) {
 }
 ```
 
-Deze moet kijken of de letter in het antwoord voorkomt en deze ofwel aan de hits String toevoegen ofwel aan de misses String.
+Deze moet kijken of de letter in het antwoord voorkomt en deze ofwel aan de hits `String` toevoegen ofwel aan de misses `String`.
 
-Uitbreiding 1: in applyGuess kan je zorgen dat een letter alleen aan de hits of misses String wordt toegevoegd, als hij er nog niet inzat.
+Uitbreiding 1: in `applyGuess` kan je zorgen dat een letter alleen aan de hits of misses `String` wordt toegevoegd, als hij er nog niet inzat.
 
-Uitbreiding 2: maak een methode triesLeft die als int teruggeeft hoeveel beurten er nog zijn. Je kan deze methode dan gebruiken in applyGuess om alleen de letter toe te voegen als er nog beurten over waren.
+Uitbreiding 2: maak een methode `triesLeft` die als `int` teruggeeft hoeveel beurten er nog zijn. Je kan deze methode dan gebruiken in `applyGuess` om alleen de letter toe te voegen als er nog beurten over waren.
 
-Zorg nu in de Controller dat, als er een letterknop ingedrukt wordt, deze aan de game meegegeven wordt d.m.v. de applyGuess methode. Zo is je Game up-to-date.
+Zorg nu in de `Controller` dat, als er een letterknop ingedrukt wordt, deze aan de game meegegeven wordt d.m.v. de `applyGuess` methode. Zo is je Game up-to-date.
 
-Maak in de scene builder alle Labels \(fx:id -&gt; hits, misses, triesLeft, progress\) aan. Zie eventueel screenshot op pagina 2.
+Maak in de scene builder alle `Label` objecten \(`fx:id` -&gt; hits, misses, triesLeft, progress\) aan. Zie eventueel screenshot op pagina 2.
 
-Maak in je Controller class ook een methode FillLabels die alle Labels update met de huidige waarde uit het Game object game. Het progress Label doen we hierna.
+Maak in je `Controller` class ook een methode `fillLabels` die alle `Label` objecten updatet met de huidige waarde uit het `Game` object game. Het progress `Label` doen we hierna.
 
-```
-private void 
-fillLabels
-() {
-```
-
-```
-misses
-.setText(
-"
-Fouten: 
-"
-+ 
-game
-.getMisses())
-;
-
-
-hits
-.setText(
-"
-Juist: 
-"
-+ 
-game
-.getHits())
-;
-
-
-triesLeft
-.setText(
-"
-Levens: 
-"
-+ 
-game
-.getTriesLeft())
-;
-```
-
-```
+```java
+private void fillLabels() {	
+    misses.setText("Fouten: " + game.getMisses());
+    hits.setText("Juist: " + game.getHits());
+    triesLeft.setText("Levens: " + game.getTriesLeft());
 }
 ```
 
 Wanneer moet deze methode aangeroepen worden?
 
-Het progress Label vul je door met een herhaling elke letter uit het antwoord te doorlopen en te controleren of deze al in de hits String aanwezig is. Als hij aanwezig is toon je de letter, anders een underscore.
+Het progress `Label` vul je door met een herhaling elke letter uit het antwoord te doorlopen en te controleren of deze al in de hits `String` aanwezig is. Als hij aanwezig is toon je de letter, anders een underscore.
 
-Na elke letter of underscore plaats je best een spatie voor de leesbaarheid. Aangezien jullie nog geen herhaling van dit type gebruikt hebben, geef ik je de code.  
-Probeer deze wel te begrijpen!
+Na elke letter of underscore plaats je best een spatie voor de leesbaarheid. Hierin maak ik gebruik van een `for` lus \(=herhaling\) die elke letter in het juiste antwoord overloopt.
 
 ```java
-public String getProgress() {
-    String progress = "";
+public String getProgress() {    
+    String progress = "";    
     for (char letter : answer.toCharArray()) {
         char display = '_';
-
-
-if 
-(
-hits
-.indexOf(letter) 
->
-= 
-0
-) {
-
-
-display = letter
-;
-
-
-}
-
-
-progress += display + 
-"
-"
-;
-
-
-}
-
-
-return 
-progress
-;
-
-
+        if (hits.indexOf(letter) >= 0) {
+            display = letter;        
+        }        
+        progress += display + " ";
+    }
+    return progress;
 }
 ```
 
-Vul nu in FillLabels ook het progress Label met de methode die je net gemaakt hebt.  
- Test het spel en voeg functionaliteit naar wens toe!
+Vul nu in `fillLabels` ook het progress `Label` met de methode die je net gemaakt hebt.  
+Test het spel en voeg functionaliteit naar wens toe!
 
