@@ -27,7 +27,7 @@ Methoden:
 
     ![](/assets/nv2.png)
 
-    \(Merk op dat je een normaalverdeling krijgt\)
+    Merk op dat je een normaalverdeling krijgt.
 
 #### Uitbreidingsoefening:
 
@@ -41,9 +41,9 @@ Zoek online op hoe je deze kan gebruiken. Enkele voorbeelden van pagina's die je
 
 Dit is een algoritme waarmee je alle priemgetallen kan bepalen tot aan een zekere bovengrens.
 
-Het algoritme werkt als volgt. 
+Het algoritme werkt als volgt.
 
-1. Creëer een array van booleans \(priem\). De bovengrens van deze array is het maximale getal dat je wil onderzoeken.
+1. Creëer een array van booleans \(priem\). De bovengrens van deze array is het maximale getal dat je wil onderzoeken.  
    Als je dus wil weten welke priemgetallen er zijn met als maximumgrens 500, maak je een array met 501 elementen.
 
 2. Zet alle elementen op `true`
@@ -52,7 +52,9 @@ Het algoritme werkt als volgt.
 
    1. Zet de eerste twee indexen van de array `priem` op false. We weten namelijk dat 0 en 1 geen priemgetallen zijn.
 
-   2. 
+   2. Als je een priemgetal tegenkomt, moet je in de array `priem` alle veelvouden van dit priemgetal schrappen.
+
+   3. Het volgende element van de array
 
 4. Druk deze getallen af op de terminal \(10 per lijn\).
 
