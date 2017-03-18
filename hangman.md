@@ -5,8 +5,7 @@
 Maak een account aan op [Trello.com](http://www.trello.com). Hier kan je per project een nieuw bord aanmaken.  
 Maak hierop het Bord “Java: Hangman” aan.
 
-In elk project dat we met Trello willen managen, maken we vier kaarten aan:  
-Backlog, TODO, WIP \(work in progress\), DONE.
+In elk project dat we met Trello willen managen, maken we vier kaarten aan: Backlog, TODO, WIP \(work in progress\), DONE.
 
 Initiëel plaats je al je ideeën op de backlog kaart, hoe vergezocht deze ook mogen lijken. In het geval van een software project maak je hier een user story van \(x moet y kunnen zodat z\).
 
@@ -49,11 +48,14 @@ Voor het JavaFX toetsenbord werk ik met verschillende containers:
 * Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als String.
 * Je methode in de Controller class heeft een ActionEvent als parameter. Deze bevat informatie over hoe deze methode opgeroepen is. We willen eerst aan een verwijzing naar de juiste Button geraken met actionEvent.getSource\(\)  getSource\(\) geeft een object van het type Object. We moeten deze nog casten \(=omzetten\) naar een button. Dan kunnen we met getText\(\) de letter die erop staat uitlezen.
 
-\`\`\`java 
+```java
+public void buttonPressed(ActionEvent actionEvent) {  
+    Button b = (Button)actionEvent.getSource(); 
+    System.out.println(b.getText()); 
+}
+```
 
-public void buttonPressed\(ActionEvent actionEvent\) {  Button b = \(Button\)actionEvent.getSource\(\); System.out.println\(b.getText\(\)\); }
 
-\`\`\`
 
 * * Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
 
