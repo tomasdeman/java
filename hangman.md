@@ -15,7 +15,7 @@ Als het volledig af is, kan je dit bij DONE zetten.
 
 Hieronder vind je de functionaliteit die minimaal \(=MVP\) nodig is om Hangman te kunnen spelen. Soms heb ik in de oplossing verschillende functionaliteiten tegelijk opgelost. Test elk stukje code je schrijft direct, zodat je niet op het einde alle fouten moet debuggen!
 
-![](/assets/import.png)
+![](/assets/hm.png)
 
 ## STAP 2: Als rader moet ik een letter kunnen ingeven, zodat ik het spel kan spelen
 

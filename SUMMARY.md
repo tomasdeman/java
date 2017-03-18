@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Hangman](hangman.md)
+* [Project: Hangman](hangman.md)
 * [arrays](arrays.md)
 

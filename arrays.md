@@ -24,15 +24,9 @@ Methoden:
 
     Het resultaat kan er als volgt uitzien:
 
-  &lt;img src="normaalverdeling.png" height="300px"&gt;
+  ![](/assets/nv.png)
 
-  * 
-  * 
-
-* \*
-
-* \* 
-* * ![](/assets/normaalverdeling.png)\(Merk op dat je een normaalverdeling krijgt\)
+* * \(Merk op dat je een normaalverdeling krijgt\)
 
   * Uitbreiding \(eventueel\): In plaats van de output op de terminal te doen met System.out.println\(\), zou je de normaalverdeling op een grafiek kunnen zetten met een JavaFX barChart. Zoek online op hoe je deze kan gebruiken \(bvb. op [https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm) \).
 
