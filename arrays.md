@@ -58,12 +58,15 @@ Het algoritme werkt als volgt.
 
 4. Druk deze getallen af op de terminal \(10 per lijn\).
 
-Wil je bijvoorbeeld de priemgetallen bepalen tot aan 1000, dan ga je als volgt te werk:  
-Schrijf alle getallen van 2 tot 1000 op.   
-Schrap alle veelvouden van 2.  
-Het eerstvolgende getal dat nog niet geschrapt is, is 3. Schrap nu alle veelvouden van 3.  
-Het eerstvolgende getal dat nog niet geschrapt is, is 5. Schrap nu alle veelvouden van 5.
+Wil je bijvoorbeeld de priemgetallen bepalen tot aan 1000, dan ga je als volgt te werk:
 
-Door deze methode voldoende lang vol te houden vind je alle priemgetallen tussen 0 en 1000.
+* Schrijf alle getallen van 2 tot 1000 op.
+* Schrap alle veelvouden van 2.
+* Het eerstvolgende getal dat nog niet geschrapt is, is 3. Schrap nu alle veelvouden van 3.
+* Het eerstvolgende getal dat nog niet geschrapt is, is 5. Schrap nu alle veelvouden van 5.
+* Door deze methode voldoende lang vol te houden vind je alle priemgetallen tussen 0 en 1000.
 
-#### Extra: houd bij hoeveel priemgetallen er onder de maximumgrens zijn.
+#### Uitdaging: houd bij hoeveel priemgetallen er onder de maximumgrens zijn.
+
+
+
