@@ -61,7 +61,7 @@ public void buttonPressed(ActionEvent actionEvent) {
 }
 ```
 
-* * Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
+* Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
 
 ## STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
 
@@ -95,7 +95,8 @@ Maak in de scene builder alle `Label` objecten \(`fx:id` -&gt; hits, misses, tri
 Maak in je `Controller` class ook een methode `fillLabels` die alle `Label` objecten updatet met de huidige waarde uit het `Game` object game. Het progress `Label` doen we hierna.
 
 ```java
-private void fillLabels() {	
+private void fillLabels() {
+
     misses.setText("Fouten: " + game.getMisses());
     hits.setText("Juist: " + game.getHits());
     triesLeft.setText("Levens: " + game.getTriesLeft());
@@ -109,13 +110,19 @@ Het progress `Label` vul je door met een herhaling elke letter uit het antwoord 
 Na elke letter of underscore plaats je best een spatie voor de leesbaarheid. Hierin maak ik gebruik van een `for` lus \(=herhaling\) die elke letter in het juiste antwoord overloopt.
 
 ```java
-public String getProgress() {    
-    String progress = "";    
+public String getProgress() {
+
+
+    String progress = "";
+
+
     for (char letter : answer.toCharArray()) {
         char display = '_';
         if (hits.indexOf(letter) >= 0) {
-            display = letter;        
-        }        
+            display = letter;
+
+        }
+
         progress += display + " ";
     }
     return progress;
