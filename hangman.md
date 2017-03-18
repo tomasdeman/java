@@ -33,7 +33,7 @@ Kies momenteel voor een invoermethode die je reeds kan implementeren en toch zo 
 
 Ik koos voor methode 3. Uiteraard mag jij ook een andere methode kiezen.
 
-![](/assets/implementation.png)
+![](/assets/implement.png)
 
 Voor het JavaFX toetsenbord werk ik met verschillende containers:
 
@@ -41,14 +41,14 @@ Voor het JavaFX toetsenbord werk ik met verschillende containers:
 * Ook kan je nu je eerste `Hbox` dupliceren om een nieuwe rij te maken.  Daarna stop je al je `HBox` containers in een `VBox`  om deze onder elkaar te plaatsen.
 * Controleer in al je containers de spatiëring \(Padding en Spacing bij Layout\).
 
-![](/assets/spacing.png)
+![](/assets/padding.png)
 
 * Laat ook de Preferred Width en Height door de computer berekenen.
 * Als al je `Button` objecten op de `Scene` staan, druk je op _CTRL-S_ \(opslaan\) en ga je in IntelliJ IDEA naar je _.fxml_ bestand. Normaalgezien staan daar 26 verwijzingen in het rood gemarkeerd, omdat de void methode `buttonPressed` in de Controller waar de Buttons naar verwijzen niet bestaat.
 * Ga op één van de rode verwijzingen staan en druk op _ALT-ENTER_.
 * Laat IDEA de methode creëren in de `Controller` class.
 
-![](/assets/createmethod.png)
+![](/assets/buttonPressed.png)
 
 * Sla je _.fxml_ bestand op en ga naar de `Controller` class waar we de methode zullen testen.
 * Om te testen of dit volstaat om een letter in te voeren, kunnen we deze op de terminal afdrukken als `String`.
