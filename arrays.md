@@ -31,18 +31,30 @@ Methoden:
 
 #### Uitbreidingsoefening:
 
-In plaats van de output op de terminal te zetten met `System.out.println()`, zou je de normaalverdeling op een grafiek kunnen zetten met een _JavaFX_ `barChart`.   
-Zoek online op hoe je deze kan gebruiken \(bvb. [https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm) \).
+In plaats van de output op de terminal te zetten met `System.out.println()`, zou je de normaalverdeling op een grafiek kunnen zetten met een _JavaFX_ `barChart`.  
+Zoek online op hoe je deze kan gebruiken. Enkele voorbeelden van pagina's die je hierbij helpen:
+
+* [https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm)
+* [http://www.java2s.com/Tutorials/Java/JavaFX/0850\_\_JavaFX\_BarChart.htm](http://www.java2s.com/Tutorials/Java/JavaFX/0850__JavaFX_BarChart.htm)
 
 ### Oefening 2: Zeef van Eratosthenes
 
-Dit is een algoritme waarmee je priemgetallen kan bepalen tot aan een zekere bovengrens.
+Dit is een algoritme waarmee je alle priemgetallen kan bepalen tot aan een zekere bovengrens.
 
-In deze methode creëer je een array van booleans \\(priem\\).
+Het algoritme werkt als volgt. 
 
-Je zet eerst alle elementen op True, en daarna zal je, via onderstaand algoritme, alle niet‐priemgetallen schrappen.
+1. Creëer een array van booleans \(priem\). De bovengrens van deze array is het maximale getal dat je wil onderzoeken.
+   Als je dus wil weten welke priemgetallen er zijn met als maximumgrens 500, maak je een array met 501 elementen.
 
-Daarna druk je deze getallen ook af \\(10 per lijn\\)
+2. Zet alle elementen op `true`
+
+3. Schrap als volgt alle niet-priemgetallen in de array door ze op `false` te zetten:
+
+   1. Zet de eerste twee indexen van de array `priem` op false. We weten namelijk dat 0 en 1 geen priemgetallen zijn.
+
+   2. 
+
+4. Druk deze getallen af op de terminal \(10 per lijn\).
 
 Wil je bijvoorbeeld de priemgetallen bepalen tot aan 1000, dan ga je als volgt te werk:
 
