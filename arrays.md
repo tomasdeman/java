@@ -66,3 +66,4 @@ Het eerstvolgende getal dat nog niet geschrapt is, is 5. Schrap nu alle veelvoud
 
 Door deze methode voldoende lang vol te houden vind je alle priemgetallen tussen 0 en 1000.
 
+#### Extra: houd bij hoeveel priemgetallen er onder de maximumgrens zijn.
