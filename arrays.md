@@ -7,8 +7,20 @@ Een concept dat iedere programmeur dient mee vertrouwd te zijn is een array.
 Een "standaard" variabele kan een waarde opslaan, maar dan ook slechts één waarde.  
 Een array kan daarentegen een hele lijst van waardes van hetzelfde type opslaan, zowel primitieve types \(int, double, ...\) als objecten.
 
-Arrays zijn eenvoudig te declareren door vierkante haken te gebruiken. Je kan kiezen of je deze na de typenaam of na de variabelenaam zet.  
-Enkele voorbeelden:
+Arrays zijn eenvoudig te declareren door vierkante haken te gebruiken. Je kan kiezen of je deze na de typenaam of na de variabelenaam zet.
+
+De declaratie van een arrayvariabele is herkenbaar aan een paar vierkante haken die volgen op de typenaam of variabelenaam. 
+
+```java
+private int[] uurteller ; 
+private int[] coeff ; 
+```
+
+Dit geeft aan dat beide variabelen van het type integer array zijn. We zeggen dat int het _basistype_ van deze arrays `int` is.
+
+De variabele `teller` kan één geheel getal bevatten, de variabele `uurteller` verwijst naar een arrayobject zodra dat object gemaakt is. Door het declareren van de arrayvariabele wordt het arrayobject nog niet aangemaakt. Dat gebeurt pas met behulp van de operator new \(zoals bij andere objecten\).
+
+Nog enkele voorbeelden:
 
 ```java
 float temperaturen [];
@@ -19,8 +31,9 @@ char letters[];
 boolean priem[];
 ```
 
-Een array heeft steeds een vaste lengte die bij initialisatie bepaald wordt.   
-Initialiseren kan op twee manieren: je kan reeds waarden mee te geven, maar je kan de array ook leeg laten. 
+Een array heeft steeds een vaste lengte die bij initialisatie bepaald wordt.  
+Initialiseren kan op twee manieren: je kan reeds waarden mee te geven, maar je kan de array ook leeg laten.  
+Hier zie je ook dat we met de `new` operator de array aanmaken.
 
 ```java
 namen = new String[] {"Filips", "Adams", "Declercq"};
