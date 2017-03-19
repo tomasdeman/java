@@ -184,3 +184,33 @@ De priemgetallen met als maximumgrens 1000 zijn:
 
 houd bij hoeveel priemgetallen er onder de maximumgrens zijn. Maak dus een methode `countPrimes` die het aantal priemgetallen onder een maximumgrens kan berekenen.
 
+### Oefening 3: tafels
+
+Maak een programma dat op je terminal de tafels van x afdrukt. Als je dit programma uitvoert voor de tafels van 10, zou je volgende output bekomen:
+
+```
+De tafels van 10
+1 * 10 = 10
+2 * 10 = 20
+3 * 10 = 30
+4 * 10 = 40
+5 * 10 = 50
+6 * 10 = 60
+7 * 10 = 70
+8 * 10 = 80
+9 * 10 = 90
+10 * 10 = 100
+```
+
+### Oefening 4: mediaan
+
+Maak een methode die de mediaan berekent van een array met double getallen. 
+
+Vul de array eerst met random double waardes. Om de mediaan te kunnen berekenen zal je deze eerst moeten sorteren. Dit kan je doen met `Array.sort(array)`.
+
+Druk zowel de waardes af als de mediaan.
+
+
+
+
+
