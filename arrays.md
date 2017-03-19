@@ -11,14 +11,26 @@ Arrays zijn eenvoudig te declareren door vierkante haken te gebruiken. Je kan ki
 Enkele voorbeelden:
 
 ```java
-float dagtemperaturen [];
+float temperaturen [];
 double[] meetwaarden;
-byte getal[];
+byte getallen[];
 String namen[];
-Char letter[];
+char letters[];
+boolean priem[];
 ```
 
 Een array heeft steeds een vaste lengte die bij initialisatie bepaald wordt.
+
+```java
+namen = new String[] {"Filips", "Adams", "Declercq"};
+klinkers = new Char[] {'a', 'e', 'i', 'o', 'u'};
+priem = new boolean[1000];
+maanden = new double[12];
+```
+
+
+
+
 
 ### Oefening 1: dobbelen
 
