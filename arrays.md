@@ -9,11 +9,11 @@ Een array kan daarentegen een hele lijst van waardes van hetzelfde type opslaan,
 
 Arrays zijn eenvoudig te declareren door vierkante haken te gebruiken. Je kan kiezen of je deze na de typenaam of na de variabelenaam zet.
 
-De declaratie van een arrayvariabele is herkenbaar aan een paar vierkante haken die volgen op de typenaam of variabelenaam. 
+De declaratie van een arrayvariabele is herkenbaar aan een paar vierkante haken die volgen op de typenaam of variabelenaam.
 
 ```java
 private int[] uurteller ; 
-private int[] coeff ; 
+private int[] coeff ;
 ```
 
 Dit geeft aan dat beide variabelen van het type integer array zijn. We zeggen dat int het _basistype_ van deze arrays `int` is.
@@ -41,6 +41,35 @@ klinkers = new Char[] {'a', 'e', 'i', 'o', 'u'};
 priem = new boolean[1000];
 maanden = new double[12];
 ```
+
+De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` . De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.   
+**Let op: indexnummers beginnen altijd bij 0 \(nul\) en lopen tot één minder dan de lengte van de array.**
+
+### De for-lus 
+
+De for-lus is wordt gebruikt: 
+
+* om een stukje code een vooraf bepaald aantal keer te laten uitvoeren 
+* om een variabele binnen de lus te hebben waarvan de waarde elke keer een regelmatig aantal verandert \(meestal +1 bij elke iteratie\) 
+
+De algemene vorm van de for-lus: 
+
+```
+for (initialisering; conditie; actie na de body) { 
+    te herhalen opdrachten 
+} 
+```
+
+Bijvoorbeeld: 
+
+```java
+for (int teller = 0; teller < coeff.length; teller++){ 
+    System.out.println(teller + “:” + coeff[teller]);
+}
+```
+
+Alle arrays bevatten een veld length dat de waarde van de onveranderlijke omvang van de array bevat. Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.   
+Bij coeff is dit 10: de indices lopen dus van 0 tot 9.
 
 ### Oefening 1: dobbelen
 
