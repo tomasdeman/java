@@ -5,11 +5,20 @@ Een concept dat iedere programmeur dient mee vertrouwd te zijn is een array.
 ### Wat is een array?
 
 Een "standaard" variabele kan een waarde opslaan, maar dan ook slechts één waarde.  
-Een array kan daarentegen een hele lijst van waardes opslaan.
+Een array kan daarentegen een hele lijst van waardes van hetzelfde type opslaan, zowel primitieve types \(int, double, ...\) als objecten.
 
-Een array kan je vergelijken met de kolommen in een spreadsheet.
+Arrays zijn eenvoudig te declareren door vierkante haken te gebruiken. Je kan kiezen of je deze na de typenaam of na de variabelenaam zet.  
+Enkele voorbeelden:
 
-## Enkele voorbeelden van toepassingen op arrays
+```java
+float dagtemperaturen [];
+double[] meetwaarden;
+byte getal[];
+String namen[];
+Char letter[];
+```
+
+
 
 ### Oefening 1: dobbelen
 
@@ -117,12 +126,10 @@ De priemgetallen met als maximumgrens 1000 zijn:
 739 743 751 757 761 769 773 787 797 809 
 811 821 823 827 829 839 853 857 859 863 
 877 881 883 887 907 911 919 929 937 941 
-947 953 967 971 977 983 991 997 
+947 953 967 971 977 983 991 997
 ```
 
-#### Uitdaging: 
+#### Uitdaging:
 
 houd bij hoeveel priemgetallen er onder de maximumgrens zijn.
-
-
 
