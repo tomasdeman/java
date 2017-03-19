@@ -18,7 +18,7 @@ String namen[];
 Char letter[];
 ```
 
-
+Een array heeft steeds een vaste lengte die bij initialisatie bepaald wordt.
 
 ### Oefening 1: dobbelen
 
