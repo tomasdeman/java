@@ -42,25 +42,25 @@ priem = new boolean[1000];
 maanden = new double[12];
 ```
 
-De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` . De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.   
+De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` . De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.  
 **Let op: indexnummers beginnen altijd bij 0 \(nul\) en lopen tot één minder dan de lengte van de array.**
 
-### De for-lus 
+### De for-lus
 
-De for-lus is wordt gebruikt: 
+De for-lus is wordt gebruikt:
 
 * om een stukje code een vooraf bepaald aantal keer te laten uitvoeren 
 * om een variabele binnen de lus te hebben waarvan de waarde elke keer een regelmatig aantal verandert \(meestal +1 bij elke iteratie\) 
 
-De algemene vorm van de for-lus: 
+De algemene vorm van de for-lus:
 
 ```
 for (initialisering; conditie; actie na de body) { 
     te herhalen opdrachten 
-} 
+}
 ```
 
-Bijvoorbeeld: 
+Bijvoorbeeld:
 
 ```java
 for (int teller = 0; teller < coeff.length; teller++){ 
@@ -68,7 +68,7 @@ for (int teller = 0; teller < coeff.length; teller++){
 }
 ```
 
-Alle arrays bevatten een veld length dat de waarde van de onveranderlijke omvang van de array bevat. Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.   
+Alle arrays bevatten een veld length dat de waarde van de onveranderlijke omvang van de array bevat. Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.  
 Bij coeff is dit 10: de indices lopen dus van 0 tot 9.
 
 ### Oefening 1: dobbelen
@@ -182,5 +182,5 @@ De priemgetallen met als maximumgrens 1000 zijn:
 
 #### Uitdaging:
 
-houd bij hoeveel priemgetallen er onder de maximumgrens zijn.
+houd bij hoeveel priemgetallen er onder de maximumgrens zijn. Maak dus een methode `countPrimes` die het aantal priemgetallen onder een maximumgrens kan berekenen.
 
