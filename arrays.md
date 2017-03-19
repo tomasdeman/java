@@ -1,3 +1,14 @@
+## Arrays
+
+Een concept dat iedere programmeur dient mee vertrouwd te zijn is een array.
+
+### Wat is een array?
+
+Een "standaard" variabele kan een waarde opslaan, maar dan ook slechts één waarde.  
+Een array kan daarentegen een hele lijst van waardes opslaan.
+
+Een array kan je vergelijken met de kolommen in een spreadsheet.
+
 ## Enkele voorbeelden van toepassingen op arrays
 
 ### Oefening 1: dobbelen
@@ -25,17 +36,39 @@ Methoden:
 
       Het resultaat kan er als volgt uitzien:
 
-    ![](/assets/nv2.png)
+    ```
+    Simulatie: 100 keer gooien met 3 dobbelstenen leverde volgende sommen op
+    3 : 0 keer gegooid.
+    4 : 2 keer gegooid.
+    5 : 0 keer gegooid.
+    6 : 3 keer gegooid.
+    7 : 9 keer gegooid.
+    8 : 18 keer gegooid.
+    9 : 13 keer gegooid.
+    10 : 8 keer gegooid.
+    11 : 15 keer gegooid.
+    12 : 11 keer gegooid.
+    13 : 7 keer gegooid.
+    14 : 4 keer gegooid.
+    15 : 2 keer gegooid.
+    16 : 6 keer gegooid.
+    17 : 2 keer gegooid.
+    18 : 0 keer gegooid.
+    ```
 
     Merk op dat je een normaalverdeling krijgt.
 
-#### Uitbreidingsoefening:
+#### Uitbreiding 1:
 
 In plaats van de output op de terminal te zetten met `System.out.println()`, zou je de normaalverdeling op een grafiek kunnen zetten met een _JavaFX_ `barChart`.  
 Zoek online op hoe je deze kan gebruiken. Enkele voorbeelden van pagina's die je hierbij helpen:
 
 * [https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/bar-chart.htm)
 * [http://www.java2s.com/Tutorials/Java/JavaFX/0850\_\_JavaFX\_BarChart.htm](http://www.java2s.com/Tutorials/Java/JavaFX/0850__JavaFX_BarChart.htm)
+
+#### Uitbreiding 2:
+
+In plaats van elke simulatie met 3 dobbelstenen uit te voeren of 100 keer te gooien, zou je deze twee waardes als parameter kunnen meegeven.
 
 ### Oefening 2: Zeef van Eratosthenes
 
@@ -52,7 +85,7 @@ Het algoritme werkt als volgt.
 
    1. Zet de eerste twee indexen van de array `priem` op false. We weten namelijk dat 0 en 1 geen priemgetallen zijn.
 
-   2. Als je een priemgetal tegenkomt, moet je in de array `priem` alle veelvouden van dit priemgetal schrappen. Dit doe je door steeds een nieuwe lus te starten bij elk priemgetal je tegenkomt. Makkelijkst is dit binnen een andere methode te doen.
+   2. Als je een priemgetal tegenkomt, moet je in de array `priem` alle veelvouden van dit priemgetal schrappen. Dit doe je door steeds een nieuwe for-lus te starten bij elk priemgetal je tegenkomt. Je kan dit eventueel met behulp van een andere methode doen.
 
    3. Als je buitenste lus het maximum bereikt heeft, heb je alle priemgetallen gevonden.
 
@@ -66,7 +99,30 @@ Wil je bijvoorbeeld de priemgetallen bepalen tot aan 1000, dan ga je als volgt t
 * Het eerstvolgende getal dat nog niet geschrapt is, is 5. Schrap nu alle veelvouden van 5.
 * Door deze methode voldoende lang vol te houden vind je alle priemgetallen tussen 0 en 1000.
 
-#### Uitdaging: houd bij hoeveel priemgetallen er onder de maximumgrens zijn.
+```
+De priemgetallen met als maximumgrens 1000 zijn:
+2 3 5 7 11 13 17 19 23 29 
+31 37 41 43 47 53 59 61 67 71 
+73 79 83 89 97 101 103 107 109 113 
+127 131 137 139 149 151 157 163 167 173 
+179 181 191 193 197 199 211 223 227 229 
+233 239 241 251 257 263 269 271 277 281 
+283 293 307 311 313 317 331 337 347 349 
+353 359 367 373 379 383 389 397 401 409 
+419 421 431 433 439 443 449 457 461 463 
+467 479 487 491 499 503 509 521 523 541 
+547 557 563 569 571 577 587 593 599 601 
+607 613 617 619 631 641 643 647 653 659 
+661 673 677 683 691 701 709 719 727 733 
+739 743 751 757 761 769 773 787 797 809 
+811 821 823 827 829 839 853 857 859 863 
+877 881 883 887 907 911 919 929 937 941 
+947 953 967 971 977 983 991 997 
+```
+
+#### Uitdaging: 
+
+houd bij hoeveel priemgetallen er onder de maximumgrens zijn.
 
 
 
