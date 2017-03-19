@@ -19,7 +19,8 @@ char letters[];
 boolean priem[];
 ```
 
-Een array heeft steeds een vaste lengte die bij initialisatie bepaald wordt.
+Een array heeft steeds een vaste lengte die bij initialisatie bepaald wordt.   
+Initialiseren kan op twee manieren: je kan reeds waarden mee te geven, maar je kan de array ook leeg laten. 
 
 ```java
 namen = new String[] {"Filips", "Adams", "Declercq"};
@@ -27,10 +28,6 @@ klinkers = new Char[] {'a', 'e', 'i', 'o', 'u'};
 priem = new boolean[1000];
 maanden = new double[12];
 ```
-
-
-
-
 
 ### Oefening 1: dobbelen
 
