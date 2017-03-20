@@ -2,6 +2,8 @@
 
 ## STAP 1: Project Management
 
+Deze stap is facultatief, maar toont een interessante methode om grote\(re\) projecten te beheersen. 
+
 Maak een account aan op [Trello.com](http://www.trello.com). Hier kan je per project een nieuw bord aanmaken.  
 Maak hierop het Bord “Java: Hangman” aan.
 

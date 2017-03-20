@@ -5,7 +5,7 @@ Een concept dat iedere programmeur dient mee vertrouwd te zijn is een array.
 ### Wat is een array?
 
 Een "standaard" variabele kan een waarde opslaan, maar dan ook slechts één waarde.  
-Een array kan daarentegen een hele lijst van waardes van hetzelfde type opslaan, zowel primitieve types \(int, double, ...\) als objecten.
+Een array kan daarentegen een hele lijst van waardes van hetzelfde type opslaan, zowel primitieve types \(int, double, ...\) als objecten. Je kan dus evengoed een array van `int` waardes opslaan als van objecten van de klasse `Persoon`.
 
 Arrays zijn eenvoudig te declareren door vierkante haken te gebruiken. Je kan kiezen of je deze na de typenaam of na de variabelenaam zet.
 
@@ -32,7 +32,7 @@ boolean priem[];
 ```
 
 Een array heeft steeds een vaste lengte die bij initialisatie bepaald wordt.  
-Initialiseren kan op twee manieren: je kan reeds waarden mee te geven, maar je kan de array ook leeg laten.  
+Initialiseren kan op twee manieren: je kan direct de waarden meegeven tussen accolades, gescheiden door komma's, of je kan de array leeg laten.  
 Hier zie je ook dat we met de `new` operator de array aanmaken.
 
 ```java
@@ -42,7 +42,10 @@ priem = new boolean[1000];
 maanden = new double[12];
 ```
 
-De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` . De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.  
+De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` .   
+In bovenstaand voorbeeld bevat de array namen drie elementen.   
+Het element `namen[0]` bevat `"Filips"`, `namen[1]` bevat `"Adams"` en `namen[2]` bevat de `String` `"Declercq"`.  
+De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.  
 **Let op: indexnummers beginnen altijd bij 0 \(nul\) en lopen tot één minder dan de lengte van de array.**
 
 ### De for-lus
