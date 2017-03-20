@@ -41,6 +41,7 @@ namen = new String[] {"Filips", "Adams", "Declercq"};
 klinkers = new Char[] {'a', 'e', 'i', 'o', 'u'};
 priem = new boolean[1000];
 maanden = new double[12];
+coeff = new int[10];
 ```
 
 De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` .  
@@ -57,7 +58,7 @@ De for-lus wordt gebruik om:
 * een stukje code een vooraf bepaald aantal keer te laten uitvoeren en
 * een variabele binnen de lus te hebben waarvan de waarde elke keer een regelmatig aantal verandert \(meestal +1 bij elke iteratie\) 
 
-De algemene vorm van de for-lus:
+De algemene vorm van de for-lus is:
 
 ```
 for (initialisering; conditie; actie na de body) { 
@@ -73,8 +74,9 @@ for (int teller = 0; teller < coeff.length; teller++){
 }
 ```
 
-Alle arrays bevatten een veld length dat de waarde van de onveranderlijke omvang van de array bevat. Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.  
-Bij coeff is dit 10: de indices lopen dus van 0 tot 9.
+Alle arrays bevatten een veld `length` dat de waarde van de onveranderlijke omvang van de array bevat.   
+Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.  
+Bij `coeff` is dit 10: de indices lopen dus van 0 tot 9.
 
 Je kan ook een `for`-lus binnen een `for`-lus gebruiken, een herhaling binnen een herhaling als het ware. Een typisch voorbeeld is het tekenen van een rechthoek, al dan niet gevuld. Deze wordt dan vanuit de `main` methode in de klasse `Main` aangeroepen.
 
@@ -271,7 +273,7 @@ De tafels van 10
 
 Maak een methode die de mediaan berekent van een array met double getallen.
 
-Vul de array eerst met random double waardes. Om de mediaan te kunnen berekenen zal je deze eerst moeten sorteren. Dit kan je doen met `Array.sort(array)`.
+Vul de array eerst met random double waardes. Om de mediaan te kunnen berekenen zal je deze eerst moeten sorteren. Dit kan je doen met `Arrays.sort(array)`.
 
 Druk zowel de waardes af als de mediaan.
 
