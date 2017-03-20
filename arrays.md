@@ -74,7 +74,7 @@ for (int teller = 0; teller < coeff.length; teller++){
 }
 ```
 
-Alle arrays bevatten een veld `length` dat de waarde van de onveranderlijke omvang van de array bevat.   
+Alle arrays bevatten een veld `length` dat de waarde van de onveranderlijke omvang van de array bevat.  
 Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.  
 Bij `coeff` is dit 10: de indices lopen dus van 0 tot 9.
 
@@ -138,6 +138,20 @@ Als output krijg je dan:
 **************************************************
 ```
 
+Ook grote sommen zijn makkelijk met lussen te berekenen. Wil je bijvoorbeeld een methode maken die de som maakt van alle integers tussen twee getallen. Dan kan je gewoon een teller laten lopen van het kleinste tot en met het grootste getal en deze steeds bij een variabele som optellen.
+
+```java
+public int somGetallen(int min, int max) {
+    int som = 0;
+    for (int i = min; i <= max; i++) {
+        som += i;
+    }
+    return som;
+}
+```
+
+
+
 ### Oefening 1: dobbelen
 
 Schrijf een klasse Dobbelen waarbij volgende simulatie gebeurt: er wordt 100 keer gegooid, telkens \(per worp\) met 3 dobbelstenen.
@@ -157,7 +171,7 @@ Methoden:
   * Andere methoden:
 
     * `dobbelsteenGooien()`:
-      * declareert en genereert een randomgenerator
+      * declareert en genereert een random generator
       * initialiseert de `array` ogen en simuleert het gooien
     * `toonResultaat()`: toont van elk aantal ogen hoeveel keer het gegooid werd.
 
