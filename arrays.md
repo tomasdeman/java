@@ -71,6 +71,45 @@ for (int teller = 0; teller < coeff.length; teller++){
 Alle arrays bevatten een veld length dat de waarde van de onveranderlijke omvang van de array bevat. Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.  
 Bij coeff is dit 10: de indices lopen dus van 0 tot 9.
 
+Je kan ook een for-lus
+
+```java
+public class Rechthoek {
+
+    public void tekenRechthoek(int breedte, int hoogte, boolean gevuld) {
+
+        if (!gevuld) {
+            for (int h = 1; h <= hoogte; h++) {
+                if (h == 1 || h == hoogte) {
+                    for (int b = 1; b <= breedte; b++) {
+                        System.out.print("*");
+                    }
+                    System.out.println("");
+                } else {
+                    System.out.print("*");
+                    for (int b = 1; b <= breedte - 2; b++) {
+                        System.out.print(" ");
+                    }
+
+                    System.out.println("*");
+                }
+            }
+        } else {
+            for (int h = 1; h <= hoogte; h++) {
+                for (int b = 1; b <= breedte; b++) {
+                    System.out.print("*");
+                }
+                System.out.println("");
+            }
+        }
+    }
+}
+```
+
+
+
+
+
 ### Oefening 1: dobbelen
 
 Schrijf een klasse Dobbelen waarbij volgende simulatie gebeurt: er wordt 100 keer gegooid, telkens \(per worp\) met 3 dobbelstenen.
@@ -204,13 +243,9 @@ De tafels van 10
 
 ### Oefening 4: mediaan
 
-Maak een methode die de mediaan berekent van een array met double getallen. 
+Maak een methode die de mediaan berekent van een array met double getallen.
 
 Vul de array eerst met random double waardes. Om de mediaan te kunnen berekenen zal je deze eerst moeten sorteren. Dit kan je doen met `Array.sort(array)`.
 
 Druk zowel de waardes af als de mediaan.
-
-
-
-
 
