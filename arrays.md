@@ -45,16 +45,17 @@ maanden = new double[12];
 
 De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` .  
 In bovenstaand voorbeeld bevat de array namen drie elementen.  
-Het element `namen[0]` bevat `"Filips"`, `namen[1]` bevat `"Adams"` en `namen[2]` bevat de `String` `"Declercq"`.  
-De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.  
+Het element `namen[0]` bevat `"Filips"`, `namen[1]` bevat `"Adams"` en `namen[2]` bevat `"Declercq"`.  
+De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.
+
 **Let op: indexnummers beginnen altijd bij 0 \(nul\) en lopen tot één minder dan de lengte van de array.**
 
 ### De for-lus
 
-De for-lus is wordt gebruikt:
+De for-lus wordt gebruik om:
 
-* om een stukje code een vooraf bepaald aantal keer te laten uitvoeren 
-* om een variabele binnen de lus te hebben waarvan de waarde elke keer een regelmatig aantal verandert \(meestal +1 bij elke iteratie\) 
+* een stukje code een vooraf bepaald aantal keer te laten uitvoeren en
+* een variabele binnen de lus te hebben waarvan de waarde elke keer een regelmatig aantal verandert \(meestal +1 bij elke iteratie\) 
 
 De algemene vorm van de for-lus:
 
