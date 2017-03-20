@@ -12,11 +12,12 @@ Arrays zijn eenvoudig te declareren door vierkante haken te gebruiken. Je kan ki
 De declaratie van een arrayvariabele is herkenbaar aan een paar vierkante haken die volgen op de typenaam of variabelenaam.
 
 ```java
-private int[] uurteller ; 
-private int[] coeff ;
+private int[] uurteller; 
+private int uurteller[];
+private int[] coeff;
 ```
 
-Dit geeft aan dat beide variabelen van het type integer array zijn. We zeggen dat int het _basistype_ van deze arrays `int` is.
+Dit geeft aan dat beide variabelen van het type integer array zijn. We zeggen dat het _basistype_ van deze arrays `int` is.
 
 De variabele `teller` kan één geheel getal bevatten, de variabele `uurteller` verwijst naar een arrayobject zodra dat object gemaakt is. Door het declareren van de arrayvariabele wordt het arrayobject nog niet aangemaakt. Dat gebeurt pas met behulp van de operator new \(zoals bij andere objecten\).
 
@@ -42,8 +43,8 @@ priem = new boolean[1000];
 maanden = new double[12];
 ```
 
-De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` .   
-In bovenstaand voorbeeld bevat de array namen drie elementen.   
+De afzonderlijke elementen van een array worden benaderd door gebruik te maken van een index. Bijvoorbeeld: `label[6]` of `coeff[3]` .  
+In bovenstaand voorbeeld bevat de array namen drie elementen.  
 Het element `namen[0]` bevat `"Filips"`, `namen[1]` bevat `"Adams"` en `namen[2]` bevat de `String` `"Declercq"`.  
 De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waarden hiervoor zijn afhankelijk van de array waarvoor ze worden gebruikt.  
 **Let op: indexnummers beginnen altijd bij 0 \(nul\) en lopen tot één minder dan de lengte van de array.**
