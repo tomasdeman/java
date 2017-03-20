@@ -150,7 +150,24 @@ public int somGetallen(int min, int max) {
 }
 ```
 
-Ook voor wiskundige reeksen zijn vaak lussen een oplossing om een titanenwerk te vermijden. Neem nu bijvoorbeeld de reeks van Fibonnaci.
+Ook voor wiskundige rijen zijn vaak lussen een oplossing om een titanenwerk te vermijden. Neem nu bijvoorbeeld de reeks van Fibonnaci. Hierbij zijn de eerste twee getallen reeds gegeven \(0 en 1\). De volgende getallen kan je eenvoudig laten berekenen door een algoritme.
+
+```java
+public int[] fibonnaci(int count) {
+        
+    int row[] = new int[count];
+    
+    row[0] = 0;
+    row[1] = 1;
+    
+    for (int i = 2; i < count; i++) {
+        row[i] = row[i-1] + row[i-2];
+    }
+    
+    return row;
+    
+}
+```
 
 ### Oefening 1: dobbelen
 
