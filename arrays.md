@@ -71,7 +71,7 @@ for (int teller = 0; teller < coeff.length; teller++){
 Alle arrays bevatten een veld length dat de waarde van de onveranderlijke omvang van de array bevat. Deze waarde komt overeen met de waarde van de integerexpressie die gebruikt werd om het arrayobject te creëren.  
 Bij coeff is dit 10: de indices lopen dus van 0 tot 9.
 
-Je kan ook een for-lus
+Je kan ook een `for`-lus binnen een `for`-lus gebruiken, een herhaling binnen een herhaling als het ware. Een typisch voorbeeld is het tekenen van een rechthoek, al dan niet gevuld. Deze wordt dan vanuit de `main` methode in de klasse `Main` aangeroepen.
 
 ```java
 public class Rechthoek {
@@ -106,9 +106,19 @@ public class Rechthoek {
 }
 ```
 
+De klasse `Main` kan er dan zo uitzien:
 
+```java
+public class Main {
 
+    public static void main(String[] args) {
 
+        Rechthoek r = new Rechthoek();
+        r.tekenRechthoek(50, 6, true);
+
+    }
+}
+```
 
 ### Oefening 1: dobbelen
 
