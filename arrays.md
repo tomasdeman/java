@@ -150,7 +150,7 @@ public int somGetallen(int min, int max) {
 }
 ```
 
-
+Ook voor wiskundige reeksen zijn vaak lussen een oplossing om een titanenwerk te vermijden. Neem nu bijvoorbeeld de reeks van Fibonnaci.
 
 ### Oefening 1: dobbelen
 
