@@ -53,12 +53,12 @@ De index \(tussen de vierkante haken\) is een integerexpressie. De geldige waard
 
 ### De for-lus
 
-De for-lus wordt gebruik om:
+De `for`-lus wordt gebruik om:
 
 * een stukje code een vooraf bepaald aantal keer te laten uitvoeren en
 * een variabele binnen de lus te hebben waarvan de waarde elke keer een regelmatig aantal verandert \(meestal +1 bij elke iteratie\) 
 
-De algemene vorm van de for-lus is:
+De algemene vorm van de `for`-lus is:
 
 ```
 for (initialisering; conditie; actie na de body) { 
