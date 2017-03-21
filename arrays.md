@@ -1,6 +1,6 @@
 ## Arrays
 
-Een concept dat iedere programmeur dient mee vertrouwd te zijn is een array.
+Een concept waar iedere programmeur dient mee vertrouwd te zijn is een array.
 
 ### Wat is een array?
 
@@ -154,18 +154,18 @@ Ook voor wiskundige rijen zijn vaak lussen een oplossing om een titanenwerk te v
 
 ```java
 public int[] fibonnaci(int count) {
-        
+
     int row[] = new int[count];
-    
+
     row[0] = 0;
     row[1] = 1;
-    
+
     for (int i = 2; i < count; i++) {
         row[i] = row[i-1] + row[i-2];
     }
-    
+
     return row;
-    
+
 }
 ```
 
