@@ -216,6 +216,8 @@ Methoden:
 
     Merk op dat je een normaalverdeling krijgt.
 
+**Oplossing**: [Solutions/Dobbelen.zip](Solutions/Dobbelen.zip)
+
 #### Uitbreiding 1:
 
 In plaats van de output op de terminal te zetten met `System.out.println()`, zou je de normaalverdeling op een grafiek kunnen zetten met een _JavaFX_ `barChart`.  
@@ -277,6 +279,8 @@ De priemgetallen met als maximumgrens 1000 zijn:
 877 881 883 887 907 911 919 929 937 941 
 947 953 967 971 977 983 991 997
 ```
+
+**Oplossing**: [Solutions/eratosthenes.zip](Solutions/eratosthenes.zip)
 
 #### Uitdaging:
 
