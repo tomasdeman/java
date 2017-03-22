@@ -304,6 +304,8 @@ De tafels van 10
 10 * 10 = 100
 ```
 
+**Oplossing**: [Solutions/tafels.zip](Solutions/tafels.zip)
+
 ### Oefening 4: mediaan
 
 Maak een methode die de mediaan berekent van een array met double getallen.
@@ -311,4 +313,6 @@ Maak een methode die de mediaan berekent van een array met double getallen.
 Vul de array eerst met random double waardes. Om de mediaan te kunnen berekenen zal je deze eerst moeten sorteren. Dit kan je doen met `Arrays.sort(array)`.
 
 Druk zowel de waardes af als de mediaan.
+
+**Oplossing**: [Solutions/mediaan.zip](Solutions/mediaan.zip)
 
