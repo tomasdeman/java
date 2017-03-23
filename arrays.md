@@ -216,8 +216,6 @@ Methoden:
 
     Merk op dat je een normaalverdeling krijgt.
 
-**Oplossing**: [Solutions/Dobbelen.zip](Solutions/Dobbelen.zip)
-
 #### Uitbreiding 1:
 
 In plaats van de output op de terminal te zetten met `System.out.println()`, zou je de normaalverdeling op een grafiek kunnen zetten met een _JavaFX_ `barChart`.  
@@ -280,8 +278,6 @@ De priemgetallen met als maximumgrens 1000 zijn:
 947 953 967 971 977 983 991 997
 ```
 
-**Oplossing**: [Solutions/eratosthenes.zip](Solutions/eratosthenes.zip)
-
 #### Uitdaging:
 
 houd bij hoeveel priemgetallen er onder de maximumgrens zijn. Maak dus een methode `countPrimes` die het aantal priemgetallen onder een maximumgrens kan berekenen.
@@ -304,8 +300,6 @@ De tafels van 10
 10 * 10 = 100
 ```
 
-**Oplossing**: [Solutions/tafels.zip](Solutions/tafels.zip)
-
 ### Oefening 4: mediaan
 
 Maak een methode die de mediaan berekent van een array met double getallen.
@@ -313,6 +307,4 @@ Maak een methode die de mediaan berekent van een array met double getallen.
 Vul de array eerst met random double waardes. Om de mediaan te kunnen berekenen zal je deze eerst moeten sorteren. Dit kan je doen met `Arrays.sort(array)`.
 
 Druk zowel de waardes af als de mediaan.
-
-**Oplossing**: [Solutions/mediaan.zip](Solutions/mediaan.zip)
 
