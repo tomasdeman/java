@@ -185,36 +185,36 @@ Methoden:
 
 * constructor: creëert de array
 
-  * Andere methoden:
+* Andere methoden:
 
-    * `dobbelsteenGooien()`:
-      * declareert en genereert een random generator
-      * initialiseert de `array` ogen en simuleert het gooien
-    * `toonResultaat()`: toont van elk aantal ogen hoeveel keer het gegooid werd.
+  * `dobbelsteenGooien()`: 
+    * declareert en genereert een random generator
+    * initialiseert de `array` ogen en simuleert het gooien
+  * `toonResultaat()`: toont van elk aantal ogen hoeveel keer het gegooid werd.
 
-      Het resultaat kan er als volgt uitzien:
+    Het resultaat kan er als volgt uitzien:
 
-    ```
-    Simulatie: 100 keer gooien met 3 dobbelstenen leverde volgende sommen op
-    3 : 0 keer gegooid.
-    4 : 2 keer gegooid.
-    5 : 0 keer gegooid.
-    6 : 3 keer gegooid.
-    7 : 9 keer gegooid.
-    8 : 18 keer gegooid.
-    9 : 13 keer gegooid.
-    10 : 8 keer gegooid.
-    11 : 15 keer gegooid.
-    12 : 11 keer gegooid.
-    13 : 7 keer gegooid.
-    14 : 4 keer gegooid.
-    15 : 2 keer gegooid.
-    16 : 6 keer gegooid.
-    17 : 2 keer gegooid.
-    18 : 0 keer gegooid.
-    ```
+  ```
+  Simulatie: 100 keer gooien met 3 dobbelstenen leverde volgende sommen op
+  3 : 0 keer gegooid.
+  4 : 2 keer gegooid.
+  5 : 0 keer gegooid.
+  6 : 3 keer gegooid.
+  7 : 9 keer gegooid.
+  8 : 18 keer gegooid.
+  9 : 13 keer gegooid.
+  10 : 8 keer gegooid.
+  11 : 15 keer gegooid.
+  12 : 11 keer gegooid.
+  13 : 7 keer gegooid.
+  14 : 4 keer gegooid.
+  15 : 2 keer gegooid.
+  16 : 6 keer gegooid.
+  17 : 2 keer gegooid.
+  18 : 0 keer gegooid.
+  ```
 
-    Merk op dat je een normaalverdeling krijgt.
+  Merk op dat je een normaalverdeling krijgt.
 
 #### Uitbreiding 1:
 
