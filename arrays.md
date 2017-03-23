@@ -308,3 +308,5 @@ Vul de array eerst met random double waardes. Om de mediaan te kunnen berekenen 
 
 Druk zowel de waardes af als de mediaan.
 
+[Solutions/eratosthenes.zip](Solutions/eratosthenes.zip) [Solutions/Dobbelen.zip](Solutions/Dobbelen.zip)
+
