@@ -78,27 +78,36 @@ public class Fish extends Pet {
    public int dive(int howDeep){
 
     currentDepth = currentDepth + howDeep;
-    System.out.println("We duiken " + howDeep + " m.");
-    System.out.println("We zitten nu " + currentDepth + " onder de zeespiegel");
+    System.out.println("We duiken " + howDeep + "m.");
+    System.out.println("We zitten nu " + currentDepth + "m onder de zeespiegel");
 
     return currentDepth;
   }
 }
 ```
 
+Laten we nu een nieuwe klasse `FishMaster` maken.
 
+```java
+public class FishMaster {
 
+  public static void main(String[] args) {
 
+    Fish myFish = new Fish();
 
+    myFish.dive(2);
+    myFish.dive(3);
 
+    myFish.sleep();
+  }
+}
+```
 
+Als output krijgen we nu:
 
-
-
-
-
-
-
+We duiken 2m.  
+We duiken 3m.  
+We zitten nu 5m onder de zeespiegel
 
 
 
