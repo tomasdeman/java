@@ -105,9 +105,12 @@ public class FishMaster {
 
 Als output krijgen we nu:
 
-We duiken 2m.  
+_We duiken 2m.  
 We duiken 3m.  
-We zitten nu 5m onder de zeespiegel
+We zitten nu 5m onder de zeespiegel.  
+Slaapwel!_
+
+
 
 
 
