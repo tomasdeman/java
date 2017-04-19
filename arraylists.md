@@ -62,7 +62,7 @@ for (int i = 0; i < namen.length; i++) {
 }
 ```
 
-Een ArrayList kan dan weer op volgende twee manieren:
+Een ArrayList kan dan weer op volgende twee manieren doorlopen:
 
 ```java
 for (int i = 0; i < stringList.size(); i++) {
@@ -75,8 +75,6 @@ for(String item: stringList){
  System.out.println("retrieved element: " + item);
 }
 ```
-
-
 
 
 
