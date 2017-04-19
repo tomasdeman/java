@@ -3,15 +3,24 @@
 Arrays zijn enorm handig om lijsten bij te houden, maar zo biedt Java nog enkele structuren.  
 Arrays hebben ook nadelen t.o.v. bijvoorbeeld ArrayLists. Hieronder enkele verschillen tussen arrays en ArrayLists:
 
-#### 1. Grootte
+#### 1. Aanmaken van de lijst
+
+```java
+ArrayList<String> notes;
+notes = new ArrayList<String>();
+```
+
+![](/assets/import.png)
+
+#### 2. Grootte
 
 Eenmaal de array aangemaakt is is de grootte ervan onveranderlijk. Je moet m.a.w. op voorhand bepalen hoe groot je array moet zijn. Een `ArrayList` daarentegen kan dynamisch groeien of krimpen.
 
-#### 2. Het aantal elementen opvragen
+#### 3. Het aantal elementen opvragen
 
 Bij een array vroeg je het aantal elementen op met de eigenschap `length`. Bij een ArrayList gebruik je hiervoor de `size()` methode.
 
-#### 3. Type elementen
+#### 4. Type elementen
 
 In een `ArrayList` kan je alleen objecten opslaan en dus geen primitieve waardes. Dit kan dan wel weer met een array.
 
@@ -24,7 +33,7 @@ integerList.add(1);
 //autoboxing
 ```
 
-#### 4. Een element aan de lijst toevoegen
+#### 5. Een element aan de lijst toevoegen
 
 Bij een array kan je op positie i een element toewijzen door de toewijzingsoperator =, bvb:
 
@@ -40,7 +49,7 @@ ArrayList<Persoon> lijstStudenten = new ArrayList<Persoon>();
 lijstStudenten.add(new Persoon("Bart", "DeSmedt", 18, "Gent"));
 ```
 
-#### 5. Een element uit de lijst verwijderen
+#### 6. Een element uit de lijst verwijderen
 
 Bij een array kan dit niet. De lijst blijft steeds even groot. Je kan echter het element de waarde null geven.  
 Bij een ArrayList kan je wel een element met de remove\(\) methode verwijderen. Als parameter geef je de positie of index mee, te beginnen met 0.
@@ -51,7 +60,7 @@ De lijst bevat dan effectief een element minder.
 lijstStudenten.remove(0);
 ```
 
-#### 6. De lijst doorlopen
+#### 7. De lijst doorlopen en een element opvragen
 
 Een array met objecten doorloop je meestal met een `for`-lus. Een voorbeeldje met `String` objecten:
 
@@ -76,6 +85,16 @@ for(String item: stringList){
  System.out.println("Element: " + item);
 }
 ```
+
+## Samenvatting
+
+| ArrayList&lt;Type&gt; |  |
+| :--- | :--- |
+| `public ArrayList<Type>()` | Constructor |
+| `public void add (Type element);` | Toevoegen van een element |
+| `public void remove (int index)` | Verwijderen van een element \(0 &lt;= index &lt; size\(\)\) |
+| `public Type get (int index)` | Opvragen van een element \(0 &lt;= index &lt; size\(\)\) |
+| `public int size()` | Opvragenvan degrootte van deArrayList |
 
 
 
