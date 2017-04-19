@@ -15,7 +15,7 @@ public class Pet {
     }
 
     public void eat(){
-        System.out.println("Zo een honger! Laat ik snel een biefstuk eten!");
+        System.out.println("Zo een honger! Laat ik snel wat nachos eten!");
     }
 
     public String talk(String word){
@@ -26,6 +26,29 @@ public class Pet {
 ```
 
 ![](/assets/friendlymonster1.png)
+
+De methodes zoals `public void sleep()` en `public void eat()` printen een boodschap op de terminal. Aangezien deze methodes geen parameters hebben, gaan deze altijd eenzelfde gedrag simuleren.
+
+De methode `public String talk(String word)` heeft wel een parameter _word_ en zal afhankelijk van deze parameter een ander tekst genereren. Deze wordt niet op de terminal geschreven, maar als `String` geretourneerd. Deze wordt dus aangeboden aan de klasse die deze methode oproept.
+
+Laten we een klasse `PetMaster` maken die dit doet. Als we deze klasse ook de methode main toekennen, kunnen we dit als start van ons project nemen.
+
+```java
+public class PetMaster {
+
+    public static void main(String[] args) {
+        String petReaction;
+        Pet myPet = new Pet();
+        myPet.eat();
+        petReaction = myPet.talk("Tweet!! Tweet!!");
+        System.out.println(petReaction);
+        myPet.sleep();
+    }
+    
+}
+```
+
+De `String`  petReaction zal de waarde opslaan die door `say()` gegenereerd wordt.
 
 
 
