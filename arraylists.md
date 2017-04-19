@@ -73,7 +73,7 @@ for (int i = 0; i < stringList.size(); i++) {
 
 //Of gebruik een for each lus
 for(String item: stringList){
- System.out.println("retrieved element: " + item);
+ System.out.println("Element: " + item);
 }
 ```
 
