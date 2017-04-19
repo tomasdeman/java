@@ -68,7 +68,39 @@ class Fish extends Pet{
 
 `Fish` is nu een subklasse van `Pet` en `Pet` de superklasse van `Fish`.
 
-Elke vis is een huisdier, maar niet elk huisdier een vis! Aangezien een vis een huisdier is, kunnen we elke public `Pet`-methode gebruiken zonder deze opnieuw te moeten definiëren.
+Elke vis is een huisdier, maar niet elk huisdier een vis! Aangezien een vis een huisdier is, kunnen we elke public `Pet`-methode gebruiken zonder deze opnieuw te moeten definiëren.![](/assets/classhierarchy.png)Nu kunnen we extra functionaliteit aan een vis geven.
+
+```java
+public class Fish extends Pet {
+
+   int currentDepth = 0;
+
+   public int dive(int howDeep){
+
+    currentDepth = currentDepth + howDeep;
+    System.out.println("We duiken " + howDeep + " m.");
+    System.out.println("We zitten nu " + currentDepth + " onder de zeespiegel");
+
+    return currentDepth;
+  }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
