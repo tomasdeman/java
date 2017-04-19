@@ -134,5 +134,72 @@ fishReaction = myFish.talk("Hello");
 System.out.println(fishReaction);
 ```
 
+Als je dit programma uitvoert krijg je _Wist je dat vissen niet kunnen praten?_ als output.
+
+De methode `talk()` uit de `Pet` klasse wordt volledig genegeerd!
+
+### Oefening: Game
+
+In een `Game` zitten verschillende vijanden: _Trollen_ en _Draken_.
+
+Merk op dat de `Trol` klasse en de `Draak` klasse enige overeenkomsten vertonen!   
+Dus maken we een bovenklasse\(of superklasse\) `Vijand`.
+
+#### 1. De klasse `Vijand`
+
+Deze klasse bevat alle gemeenschappelijke variabelen en methodes van `Draak` en `Trol`.   
+Denk goed na welke elementen in deze beide klassen voorkomen en plaats deze dan in de klasse `Vijand`. Geef elke vijand op zijn minst een naam en een voornaam.
+
+#### 2. De klasse `Draak`
+
+Deze klasse bevat elementen die specifiek voor de draak zijn.
+
+Bijvoorbeeld:
+
+* Kleur
+* Vleugelbreedte
+* Radius
+
+Voorzie de nodige getters en setters.  
+Voorzie ook een methode `spuwVuur()` die afdrukt dat de draak aanvalt: gebruik de specifieke voor en achternaam van de bewuste draak \(bv. "Smaug De Verschrikkelijke valt aan"\) en dat iedereen in een straal van radius geroosterd is \(bv. Iedereen in de straal van 4 km is geroosterd\).
+
+**MERK OP:**
+
+De methoden in de bovenklasse komen hier ook automatisch terecht \(ze worden overgeërfd\). Je kan dus gewoon methodes gebruiken van de bovenklasse alsof ze in deze klasse zouden staan.
+
+### 3. De klasse Trol
+
+Deze klasse bevat elementen die specifiek voor de Trol zijn.
+
+Bijvoorbeeld:
+
+* Grootte
+* Snelheid
+
+Voorzie de nodige getters en setters.
+
+Voorzie ook een methode `slaMetKnots(int knotsGrootte)` die afdrukt dat iedereen boem baf doodgemept is. Let op! Als de knots groter is dan de `Trol` zelf, dan wordt er afgedrukt dat hij zijn knots niet kan dragen.
+
+Druk ook de naam af van de trol in beide gevallen.
+
+**MERK OP:**
+
+De methoden in de bovenklasse komen hier ook automatisch terecht \(ze worden overgeërfd\). Je kan dus gewoon methodes gebruiken van de bovenklasse alsof ze in deze klasse zouden staan.
+
+#### 4. De klasse Game
+
+Hier worden de vijanden bijgehouden. Gebruiken we een array of een `ArrayList`?
+
+Voorzie een methode `voegVijandToe(Vijand v)` die een vijand toevoegt.
+
+Voorzie een methode `printVijanden()` die alle vijanden in het spel afdrukt.
+
+Voorzie een methode `printDraken()` die alle draken in het spel afdrukt.
+
+Voorzie een methode `valAanVijanden()` waarin alle vijanden gaan aanvallen. Aanvallen wil zeggen:
+
+1. Als het een `Trol` is, wordt `slaMetKnots` opgeroepen \(je kan zelf kiezen hoe groot de knots is\)
+2. Als het een `Draak` is, wordt `spuwVuur` opgeroepen
+
 
 
