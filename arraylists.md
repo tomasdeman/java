@@ -53,7 +53,7 @@ lijstStudenten.remove(0);
 
 #### 6. De lijst doorlopen
 
-Een array met objecten doorloop je meestal met een for-lus.
+Een array met objecten doorloop je meestal met een `for`-lus. Een voorbeeldje met `String` objecten:
 
 ```java
 String[] namen = {"Bob", "Jan", "Bert", "An", "Lars", "Els", "Alissa"};
@@ -61,6 +61,22 @@ for (int i = 0; i < namen.length; i++) {
     System.out.println("Hallo, " + namen[i]);
 }
 ```
+
+Een ArrayList kan dan weer op volgende twee manieren:
+
+```java
+for (int i = 0; i < stringList.size(); i++) {
+ String item = stringList.get(i);
+ System.out.println("Item " + i + " : " + item);
+}
+
+//Of gebruik een for each lus
+for(String item: stringList){
+ System.out.println("retrieved element: " + item);
+}
+```
+
+
 
 
 
