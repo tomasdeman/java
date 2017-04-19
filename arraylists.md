@@ -21,7 +21,7 @@ Deze kunnen echter d.m.v. _autoboxing_ geconverteerd worden naar een object, zod
 ArrayList<Integer> integerList = new ArrayList<Integer>();
 integerList.add(1); 
 //in realiteit wordt niet de int waarde 1 in de ArrayList gestopt, maar via een systeem van
-//autoboxing 
+//autoboxing
 ```
 
 #### 4. Een element aan de lijst toevoegen
