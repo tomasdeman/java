@@ -44,11 +44,21 @@ public class PetMaster {
         System.out.println(petReaction);
         myPet.sleep();
     }
-    
+
 }
 ```
 
-De `String`  petReaction zal de waarde opslaan die door `say()` gegenereerd wordt.
+Als we van deze klasse de main methode oproepen, zal het beestje eerst eten, dan spreken en uiteindelijk slapen.
+
+We kunnen dus volgende output verwachten:
+
+_Zo een honger! Laat ik snel wat nachos eten!   
+Ok! Ok! Tweet! Tweet!   
+Slaapwel!_
+
+Momenteel hebben we dus twee klassen `PetMaster` en `Pet` . `Pet` respresenteert de eigenschappen en gedragingen van een huisdier en `PetMaster` start het programma, maakt een `Pet` aan en de methodes van dit huisdier aan.
+
+Laten we een klasse `Fish` maken die alle eigenschappen en gedragingen van een `Pet` overneemt \(overerft\).
 
 
 
