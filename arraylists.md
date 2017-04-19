@@ -51,5 +51,16 @@ De lijst bevat dan effectief een element minder.
 lijstStudenten.remove(0);
 ```
 
+#### 6. De lijst doorlopen
+
+Een array met objecten doorloop je meestal met een for-lus.
+
+```java
+String[] namen = {"Bob", "Jan", "Bert", "An", "Lars", "Els", "Alissa"};
+for (int i = 0; i < namen.length; i++) {
+    System.out.println("Hallo, " + namen[i]);
+}
+```
+
 
 
