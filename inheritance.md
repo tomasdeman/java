@@ -56,6 +56,8 @@ _Zo een honger! Laat ik snel wat nachos eten!
 Ok! Ok! Tweet! Tweet!  
 Slaapwel!_
 
+### Subklassen en superklassen
+
 Momenteel hebben we dus twee klassen `PetMaster` en `Pet` . `Pet` respresenteert de eigenschappen en gedragingen van een huisdier en `PetMaster` start het programma, maakt een `Pet` aan en de methodes van dit huisdier aan.
 
 Laten we een klasse `Fish` maken die alle eigenschappen en gedragingen van een `Pet` overneemt \(overerft\). Met het keyword `extends` kunnen we dit aan Java duidelijk maken.
@@ -68,7 +70,9 @@ class Fish extends Pet{
 
 `Fish` is nu een subklasse van `Pet` en `Pet` de superklasse van `Fish`.
 
-Elke vis is een huisdier, maar niet elk huisdier een vis! Aangezien een vis een huisdier is, kunnen we elke public `Pet`-methode gebruiken zonder deze opnieuw te moeten definiëren.![](/assets/classhierarchy.png)Nu kunnen we extra functionaliteit aan een vis geven.
+Elke vis is een huisdier, maar niet elk huisdier een vis! Aangezien een vis een huisdier is, kunnen we elke public `Pet`-methode gebruiken zonder deze opnieuw te moeten definiëren.![](/assets/classhierarchy.png)
+
+Nu kunnen we extra functionaliteit aan een vis geven.
 
 ```java
 public class Fish extends Pet {
@@ -110,9 +114,25 @@ We duiken 3m.
 We zitten nu 5m onder de zeespiegel.  
 Slaapwel!_
 
+### Method overriding
 
+Het kan zijn dat je bepaalde methodes wil "overschrijven" met nieuwe functionaliteit. Neem nu de `talk()` methode. Aangezien een vis niet kan praten, zullen we deze voor de `Fish` klasse overschrijven of overriden.
 
+In de `Fish` klasse voegen we nu volgende methode toe:
 
+```java
+public String talk(String something){
+  return "Wist je dat vissen niet kunnen praten?";
+}
+```
+
+Als we nu in de `FishMaster` klasse volgende code toevoegen, krijgen we een ander gedrag.
+
+```java
+String fishReaction;
+fishReaction = myFish.talk("Hello");
+System.out.println(fishReaction);
+```
 
 
 
