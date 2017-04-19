@@ -37,7 +37,18 @@ Een element aan een ArrayList toevoegen doe je m.b.v. de add\(\) methode. Dit zo
 
 ```java
 ArrayList<Persoon> lijstStudenten = new ArrayList<Persoon>();
-lijstStudenten.add(new Persoon("Bart", "Devilder", 18, "Gent"));
+lijstStudenten.add(new Persoon("Bart", "DeSmedt", 18, "Gent"));
+```
+
+#### 5. Een element uit de lijst verwijderen
+
+Bij een array kan dit niet. De lijst blijft steeds even groot. Je kan echter het element de waarde null geven.  
+Bij een ArrayList kan je wel een element met de remove\(\) methode verwijderen. Als parameter geef je de positie of index mee, te beginnen met 0.
+
+De lijst bevat dan effectief een element minder.
+
+```java
+lijstStudenten.remove(0);
 ```
 
 
