@@ -142,12 +142,12 @@ De methode `talk()` uit de `Pet` klasse wordt volledig genegeerd!
 
 In een `Game` zitten verschillende vijanden: _Trollen_ en _Draken_.
 
-Merk op dat de `Trol` klasse en de `Draak` klasse enige overeenkomsten vertonen!   
+Merk op dat de `Trol` klasse en de `Draak` klasse enige overeenkomsten vertonen!  
 Dus maken we een bovenklasse\(of superklasse\) `Vijand`.
 
 #### 1. De klasse `Vijand`
 
-Deze klasse bevat alle gemeenschappelijke variabelen en methodes van `Draak` en `Trol`.   
+Deze klasse bevat alle gemeenschappelijke variabelen en methodes van `Draak` en `Trol`.  
 Denk goed na welke elementen in deze beide klassen voorkomen en plaats deze dan in de klasse `Vijand`. Geef elke vijand op zijn minst een naam en een voornaam.
 
 #### 2. De klasse `Draak`
