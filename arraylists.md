@@ -94,27 +94,25 @@ for(String item: stringList){
 | `public void add (Type element);` | Toevoegen van een element |
 | `public void remove (int index)` | Verwijderen van een element \(0 &lt;= index &lt; size\(\)\) |
 | `public Type get (int index)` | Opvragen van een element \(0 &lt;= index &lt; size\(\)\) |
-| `public int size()` | Opvragenvan degrootte van deArrayList |
+| `public int size()` | Opvragenvan de grootte van deArrayList |
 
 ## Oefening: muziekalbum/afspeellijst
 
 #### Deel 1: klasse Nummer
 
-Creëer een klasse _Nummer_ \(die 1 liedje voorstelt\) met de velden: titel, duur \(in seconden\). 
-
-Schrijf een constructor, accessors en mutators voor deze twee velden. 
-
-Schrijf een methode getNummer\(\) die een String teruggeeft in de vorm: titel \(minuten:seconden\)
+* Creëer een klasse _Nummer_ \(die 1 liedje voorstelt\) met de velden: titel, duur \(in seconden\).
+* Schrijf een constructor, accessors en mutators voor deze twee velden.
+* Schrijf een methode getNummer\(\) die een String teruggeeft in de vorm: titel \(minuten:seconden\)
 
 #### Deel 2: klasse Album
 
-Creëer een klasse Album met drie velden: artiest, titel en nummers \(=lijst van liedjes\).
+Creëer een klasse Album met drie velden: artiest, titel en nummers \(=lijst van liedjes\)
 
 * Schrijf een constructor die titel en artiest opvraagt en de velden initialiseert.
 * Maak accessors en mutators voor de velden artiest en titel
 * Schrijf \(twee\) methoden die ervoor zorgen dat nummers achteraan kunnen toegevoegd worden \(addNummer\). Bekijk de documentatie voor de details.
-*  en zorg ervoor dat de nummers kunnen opgevraagd worden op index \(getNummer\)
-*  Schrijf een methode die weergeeft hoeveel nummers er op het album aanwezig zijn \(getAantalNummers\)
+* en zorg ervoor dat de nummers kunnen opgevraagd worden op index \(getNummer\)
+* Schrijf een methode die weergeeft hoeveel nummers er op het album aanwezig zijn \(getAantalNummers\)
 * Maak een methode die de informatie van het album afdrukt op het scherm \(printNummers\)
 * Maak een functiemethode die de duur van het album teruggeeft \(getDuur\).
 
