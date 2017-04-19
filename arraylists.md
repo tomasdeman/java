@@ -20,8 +20,8 @@ Deze kunnen echter d.m.v. _autoboxing_ geconverteerd worden naar een object, zod
 ```java
 ArrayList<Integer> integerList = new ArrayList<Integer>();
 integerList.add(1); 
-//here we are not storing the primitive int value 1 in an ArrayList, instead autoboxing will convert 
-//the int primitive to an Integer object
+//in realiteit wordt niet de int waarde 1 in de ArrayList gestopt, maar via een systeem van
+//autoboxing 
 ```
 
 #### 4. Een element aan de lijst toevoegen
@@ -65,6 +65,7 @@ for (int i = 0; i < namen.length; i++) {
 Een ArrayList kan dan weer op volgende twee manieren doorlopen:
 
 ```java
+//Maak een iterator (teller) die je als index gebruikt
 for (int i = 0; i < stringList.size(); i++) {
  String item = stringList.get(i);
  System.out.println("Item " + i + " : " + item);
