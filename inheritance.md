@@ -168,7 +168,7 @@ Voorzie ook een methode `spuwVuur()` die afdrukt dat de draak aanvalt: gebruik d
 
 De methoden in de bovenklasse komen hier ook automatisch terecht \(ze worden overgeërfd\). Je kan dus gewoon methodes gebruiken van de bovenklasse alsof ze in deze klasse zouden staan.
 
-### 3. De klasse `Trol`
+#### 3. De klasse `Trol`
 
 Deze klasse bevat elementen die specifiek voor de Trol zijn.
 
