@@ -187,7 +187,7 @@ Druk ook de naam af van de trol in beide gevallen.
 
 De methoden in de bovenklasse komen hier ook automatisch terecht \(ze worden overgeërfd\). Je kan dus gewoon methodes gebruiken van de bovenklasse alsof ze in deze klasse zouden staan.
 
-#### 4. De klasse Game
+#### 4. De klasse `Game`
 
 Hier worden de vijanden bijgehouden. Gebruiken we een array of een `ArrayList`?
 
