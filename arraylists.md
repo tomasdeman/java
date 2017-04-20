@@ -94,7 +94,7 @@ for(String item: stringList){
 | `public void add (Type element);` | Toevoegen van een element |
 | `public void remove (int index)` | Verwijderen van een element \(0 &lt;= index &lt; size\(\)\) |
 | `public Type get (int index)` | Opvragen van een element \(0 &lt;= index &lt; size\(\)\) |
-| `public int size()` | Opvragenvan de grootte van deArrayList |
+| `public int size()` | Opvragen van de grootte van de ArrayList |
 
 ## Oefening: muziekalbum/afspeellijst
 
