@@ -1,6 +1,6 @@
 .gitbook-link {
     display: none !important;
 }
-a {
+.custom-link {
     color:red !important;
 }
