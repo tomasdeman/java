@@ -139,6 +139,27 @@ Als je dit programma uitvoert krijg je _Wist je dat vissen niet kunnen praten?_ 
 
 De methode `talk()` uit de `Pet` klasse wordt volledig genegeerd!
 
+### De `instanceof` operator
+
+Java heeft een binaire operator `instanceof` die een boolean waarde teruggeeft. Als het object een instantie van de klasse is, geeft deze operator true terug, anders false.
+
+Zo kan je bijvoorbeeld nagaan welk type Pet een bepaald object is. In onderstaande code overlopen we de `ArrayList` en laten we alle niet-vissen spreken.
+
+```java
+ArrayList<Pet> list = new ArrayList<>();
+list.add(new Fish());
+list.add(new Horse());
+list.add(new Fish());
+list.add(new Dog());
+list.add(new Fish());
+
+for (Pet p : list) {
+    if (!(p instanceof Fish)) {
+        System.out.println(p.talk("Hellooo!"));
+    }
+}
+```
+
 ### Oefening: Game
 
 In een `Game` zitten verschillende vijanden: _Trollen_ en _Draken_.
