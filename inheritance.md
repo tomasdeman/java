@@ -165,7 +165,7 @@ Je kan ook bepaalde methodes implementeren in de superklasse en andere abstract 
 abstract public class AbstractClass
 {
     abstract public void abstractMethod();
-    
+
     public void implementedMethod() { 
         System.out.print("implementedMethod()"); 
     }
@@ -181,7 +181,7 @@ public class ImplementingClass extends AbstractClass
 }
 ```
 
-De Java Virtual Machine kan niet weten in bovenstaand voorbeeld wat te doen bij   
+De Java Virtual Machine kan niet weten in bovenstaand voorbeeld wat te doen bij  
 `new ImplementingClass().abstractMethod()`. Een abstracte methode moet geïmplementeerd worden in de subklassen.
 
 Dit is een voorbeeld van een correcte subklasse:
@@ -203,7 +203,7 @@ public class ImplementingClass extends AbstractClass
     public void abstractMethod() { 
         System.out.print("abstractMethod()"); 
     }
-    
+
     public void implementedMethod() { 
         System.out.print("Overridden!"); 
     }
@@ -231,7 +231,53 @@ for (Pet p : list) {
 }
 ```
 
-### Oefening: Game
+### De factory pattern
+
+Als je objecten wil creëren van subklassen van eenzelfde superklasse, wordt er vaak gebruik gemaakt van het zogenaamde factory pattern. Hierbij maak je een klasse dat met een enkele methode elk gewenst object van één van de subklassen kan aanmaken.
+
+```java
+public class PetFactory {
+	
+   public Pet getPet(String petType){
+      if(petType.equalsIgnoreCase("FISH")){
+         return new Fish();
+         
+      } else if(petType.equalsIgnoreCase("DOG")){
+         return new Dog();
+         
+      } else if(petType.equalsIgnoreCase("CANARY")){
+         return new Canary();
+      }
+      
+      return null;
+   }  
+   
+}
+```
+
+Zo kan je in je `Main` klasse een `PetFactory` aanmaken en deze al het werk laten doen.
+
+```java
+public class Main {
+   public static void main(String[] args) {
+      PetFactory petFactory = new PetFactory();
+
+      //get an object of Fish and call its dance method.
+      Pet pet1 = petFactory.getPet("FISH");
+      pet1.dance();
+
+      //get an object of Dog and call its dance method.
+      Pet pet2 = petFactory.getPet("DOG");
+      pet2.dance();
+
+      //get an object of Canary and call its dance method.
+      Pet pet3 = petFactory.getPet("CANARY");
+      pet3.dance();
+   }
+}
+```
+
+### Oefening 1: Game
 
 In een `Game` zitten verschillende vijanden: _Trollen_ en _Draken_.
 
