@@ -139,9 +139,76 @@ Als je dit programma uitvoert krijg je _Wist je dat vissen niet kunnen praten?_ 
 
 De methode `talk()` uit de `Pet` klasse wordt volledig genegeerd! Als je wil dat beide uitgevoerd worden, kan je met het keyword `super` het object van de superklasse verwijzen. Net zoals `this` naar het huidige object verwijst.
 
+```java
+public String talk(String something){
+  super.talk(something);
+  return "Wist je dat vissen niet kunnen praten?";
+}
+```
+
 ### Abstracte klassen
 
-De superklasse `Pet` hoeft in feite nooit geïnstantieerd te worden. Er zullen alleen subklasses gecreëerd worden \(`Fish`, `Dog`, ...\)
+De superklasse `Pet` hoeft in feite nooit geïnstantieerd te worden. Er zullen alleen subklasses gecreëerd worden \(`Fish`, `Dog`, ...\). Als je wel zou willen dat er dat de superklasse specifieert welke methodes moeten overgeërfd worden, zonder deze effectief uit te werken, kunnen we de superklasse abstract maken.
+
+```java
+abstract class Pet {
+    public abstract void dance();
+    public abstract void run();
+}
+```
+
+Zoals je ziet bevatten deze methodes nog geen code. Deze zullen verplicht worden om in de subklassen te implementeren.
+
+Je kan ook bepaalde methodes implementeren in de superklasse en andere abstract maken.
+
+```java
+abstract public class AbstractClass
+{
+    abstract public void abstractMethod();
+    
+    public void implementedMethod() { 
+        System.out.print("implementedMethod()"); 
+    }
+}
+```
+
+Aangezien `abstractMethod()` geen body heeft, kan je het volgende niet doen:
+
+```java
+public class ImplementingClass extends AbstractClass
+{
+    // ERROR!
+}
+```
+
+De Java Virtual Machine kan niet weten in bovenstaand voorbeeld wat te doen bij   
+`new ImplementingClass().abstractMethod()`. Een abstracte methode moet geïmplementeerd worden in de subklassen.
+
+Dit is een voorbeeld van een correcte subklasse:
+
+```java
+public class ImplementingClass extends AbstractClass
+{
+    public void abstractMethod() { 
+        System.out.print("abstractMethod()"); 
+    }
+}
+```
+
+Aangezien `implementedMethod()` reeds in `AbstractClass` gedefiniëerd was, hoef je deze niet opnieuw te definiëren. Maar je kan die natuurlijk wel overriden.
+
+```java
+public class ImplementingClass extends AbstractClass
+{
+    public void abstractMethod() { 
+        System.out.print("abstractMethod()"); 
+    }
+    
+    public void implementedMethod() { 
+        System.out.print("Overridden!"); 
+    }
+}
+```
 
 ### De `instanceof` operator
 
