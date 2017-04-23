@@ -137,7 +137,11 @@ System.out.println(fishReaction);
 
 Als je dit programma uitvoert krijg je _Wist je dat vissen niet kunnen praten?_ als output.
 
-De methode `talk()` uit de `Pet` klasse wordt volledig genegeerd!
+De methode `talk()` uit de `Pet` klasse wordt volledig genegeerd! Als je wil dat beide uitgevoerd worden, kan je met het keyword `super` het object van de superklasse verwijzen. Net zoals `this` naar het huidige object verwijst.
+
+### Abstracte klassen
+
+De superklasse `Pet` hoeft in feite nooit geïnstantieerd te worden. Er zullen alleen subklasses gecreëerd worden \(`Fish`, `Dog`, ...\)
 
 ### De `instanceof` operator
 
