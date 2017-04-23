@@ -58,7 +58,7 @@ Slaapwel!_
 
 ### Subklassen en superklassen
 
-Momenteel hebben we dus twee klassen `PetMaster` en `Pet` . `Pet` respresenteert de eigenschappen en gedragingen van een huisdier en `PetMaster` start het programma, maakt een `Pet` aan en de methodes van dit huisdier aan.
+Momenteel hebben we dus twee klassen `PetMaster` en `Pet` . `Pet` respresenteert de eigenschappen en gedragingen van een huisdier en `PetMaster` start het programma, maakt een `Pet` aan en roept enkele methodes van dit huisdier aan.
 
 Laten we een klasse `Fish` maken die alle eigenschappen en gedragingen van een `Pet` overneemt \(overerft\). Met het keyword `extends` kunnen we dit aan Java duidelijk maken.
 
@@ -237,21 +237,21 @@ Als je objecten wil creëren van subklassen van eenzelfde superklasse, wordt er 
 
 ```java
 public class PetFactory {
-	
+
    public Pet getPet(String petType){
       if(petType.equalsIgnoreCase("FISH")){
          return new Fish();
-         
+
       } else if(petType.equalsIgnoreCase("DOG")){
          return new Dog();
-         
+
       } else if(petType.equalsIgnoreCase("CANARY")){
          return new Canary();
       }
-      
+
       return null;
    }  
-   
+
 }
 ```
 
