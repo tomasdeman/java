@@ -342,7 +342,7 @@ Voorzie een methode `valAanVijanden()` waarin alle vijanden gaan aanvallen. Aanv
 
 ### Oefening 2: shapes
 
-Maak een Java project dat wiskundige figuren aanmaakt en beheert. We hebben op zijn minst een rechthoek, een cirkel, een vierkant, een driehoek en een ovaal.
+Maak een Java project dat wiskundige figuren aanmaakt en beheert. Voorzie op zijn minst een rechthoek, een cirkel, een vierkant, een driehoek en een ovaal.
 
 Elke figuur moet zijn oppervlakte en omtrek kunnen berekenen en teruggeven. Ook moet een elke `Shape` een `print()` methode hebben die het type object op de terminal afdrukt en de details over de figuur \(omtrek, oppervlakte, zijde x, radius, ...\).
 
@@ -352,7 +352,7 @@ Maak ook een `ShapeFactory` die een shape kan aanmaken van elke gewenste vorm, z
 
 In de hoofdklasse `ShapesSimulation` maak je dan de `ShapeFactory` aan. D.m.v. een `for`-lus laat je deze dan een aantal random figuren aanmaken en in een `ArrayList` stoppen.
 
-Voorzie ook volgende methodes: 
+Voorzie ook volgende methodes:
 
 * `printTriangles()`
 * `printAllShapes()`
