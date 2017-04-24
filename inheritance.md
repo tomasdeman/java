@@ -340,6 +340,8 @@ Voorzie een methode `valAanVijanden()` waarin alle vijanden gaan aanvallen. Aanv
 1. Als het een `Trol` is, wordt `slaMetKnots` opgeroepen \(je kan zelf kiezen hoe groot de knots is\)
 2. Als het een `Draak` is, wordt `spuwVuur` opgeroepen
 
+Oplossing: [Solutions/Game.zip](Solutions/Game.zip)
+
 ### Oefening 2: shapes
 
 Maak een Java project dat wiskundige figuren aanmaakt en beheert. Voorzie op zijn minst een rechthoek, een cirkel, een vierkant, een driehoek en een ovaal.
