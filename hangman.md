@@ -1,8 +1,8 @@
-# Project Hangman
+## Project Hangman
 
-## STAP 1: Project Management
+### STAP 1: Project Management
 
-Deze stap is facultatief, maar toont een interessante methode om grote\(re\) projecten te beheersen. 
+Deze stap is facultatief, maar toont een interessante methode om grote\(re\) projecten te beheersen.
 
 Maak een account aan op [Trello.com](http://www.trello.com). Hier kan je per project een nieuw bord aanmaken.  
 Maak hierop het Bord “Java: Hangman” aan.
@@ -19,7 +19,7 @@ Hieronder vind je de functionaliteit die minimaal \(=MVP\) nodig is om Hangman t
 
 ![](/assets/hm.png)
 
-## STAP 2: Als rader moet ik een letter kunnen ingeven, zodat ik het spel kan spelen
+### STAP 2: Als rader moet ik een letter kunnen ingeven, zodat ik het spel kan spelen
 
 Je moet beslissen op welke manier je door de gebruiker een letter laat ingeven.
 
@@ -65,7 +65,7 @@ public void buttonPressed(ActionEvent actionEvent) {
 
 * Nu hebben we onze eerste User Story afgewerkt en kunnen we deze naar WIP verplaatsen.
 
-## STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
+### STAP 3: Als rader zou ik mijn vooruitgang moeten kunnen zien, zodat ik een beredeneerde gok kan doen.
 
 De toestand van het spel en de methodes om een gok te doen, stop je best in een aparte nieuwe klasse `Game` zodat de spellogica volledig gescheiden is van de layout of GUI \(Graphical User Interface\).
 

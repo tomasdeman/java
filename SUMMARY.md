@@ -5,4 +5,5 @@
 * [Arrays](arrays.md)
 * [ArrayLists](arraylists.md)
 * [Overerving](inheritance.md)
+* [Project: vier op een rij](project-vier-op-een-rij.md)
 
