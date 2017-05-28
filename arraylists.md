@@ -42,7 +42,7 @@ Object[] objArray = new Object[10];
 objArray[1] = new Object();
 ```
 
-Een element aan een ArrayList toevoegen doe je m.b.v. de add\(\) methode. Dit zou dan weer zo kunnen:
+Een element aan een `ArrayList` toevoegen doe je m.b.v. de `add()` methode. Dit zou dan weer zo kunnen:
 
 ```java
 ArrayList<Persoon> lijstStudenten = new ArrayList<Persoon>();
@@ -86,6 +86,11 @@ for(String item: stringList){
 }
 ```
 
+#### 8. Extra methodes op de `ArrayList`
+
+* De boolean methode `isEmpty()` controleert of de lijst leeg is.
+* De void methode` clear()` maakt de lijst in 1 keer volledig leeg. Uiteraard kan je dit ook met een `for`-lus en de `remove()`-methode bereiken.
+
 ## Samenvatting
 
 | ArrayList&lt;Type&gt; |  |
@@ -95,6 +100,8 @@ for(String item: stringList){
 | `public void remove (int index)` | Verwijderen van een element \(0 &lt;= index &lt; size\(\)\) |
 | `public Type get (int index)` | Opvragen van een element \(0 &lt;= index &lt; size\(\)\) |
 | `public int size()` | Opvragen van de grootte van de ArrayList |
+| `public boolean isEmpty()` | Kijkt of de lijst leeg is |
+| `public void clear()` | Verwijdert alle elementen uit de lijst. |
 
 ## Oefening: muziekalbum/afspeellijst
 
