@@ -4,7 +4,7 @@ JavaFX is een Java bibliotheek met als doel een grafische user interfaces \(GUI\
 
 * de Main klasse: hier start je programma en wordt je fxml bestand gekoppeld aan de Controller klasse. Hier kan je bijvoorbeeld
 * het fxml bestand: dit bestand beschrijft de layout van je venster. Dit kan je d.m.v. een rechtermuisklik bewerken in de Scene Builder.
-* de Controller klasse: hierin doe je alle interactie met je Controls. Als er op een `Button` geklikt wordt of als er een Label van tekst met veranderen doe je dit hier. TIP: ontwerp eerst alle hulpklassen, zodat je deze vanuit je Controller kan gebruiken.
+* de Controller klasse: hierin doe je alle interactie met je Controls. Als er op een `Button` geklikt wordt of als er een Label van tekst met veranderen doe je dit hier. TIP: ontwerp bij elk project eerst alle hulpklassen, zodat je deze vanuit je Controller kan gebruiken. De Controller klasse kan je in de Scene Builder instellen. 
 
 Hieronder een overzicht van de te gebruiken controls. Zoek gerust in de documentatie van JavaFX \([https://docs.oracle.com/javase/8/javafx/api/toc.htm](https://docs.oracle.com/javase/8/javafx/api/toc.htm)\) welke methoden je zal moeten gebruiken voor het probleem dat je wil oplossen.
 
@@ -27,20 +27,24 @@ Welke containers gebruiken we?
   ```
 
   Een item aan een ComboBoxtoevoegen doe je zo:  
-  `combobox.getItems().add(5); //igv. een Integer ComboBox   
-   combobox.getItems().add(5); //igv. een String`  
+  `combobox.getItems().add(5); //igv. een Integer ComboBox     
+   combobox.getItems().add(5); //igv. een String`
 
+Het juiste item selecteren doe je als volgt:
 
-  Het juiste item selecteren doe je als volgt:
-
-  ```java
+```java
   combobox.getSelectionModel().select(3); //selecteer het item met index 3
   combobox.getSelectionModel().select("Tomas"); //selecteer het String object met waarde "Tomas"
   combobox.getSelectionModel().selectFirst(); //selecteert het eerste item.
-  ```
+```
 
-  Net zoals bij een Button kan je met on Action kiezen welke void methode opgeroepen moet worden in de Controller klasse als je een item selecteert.
+Net zoals bij een Button kan je met on Action kiezen welke void methode opgeroepen moet worden in de Controller klasse als je een item selecteert.
 
-* 
+* `Label`: Deze control dient om tekst weer te geven. Hier kan je de gebruiker niets laten invullen.  
+  Je kan opnieuw met `getText()` en `setText(String value)` de tekstwaarde opvragen of veranderen.
+
+* `TextField`:Deze control dient om tekst te laten invullen die we dan als invoer in ons programma kunnen gebruiken.  
+  Je kan opnieuw met `getText()` en `setText(String value)` de tekstwaarde opvragen of veranderen.
+
 
 
