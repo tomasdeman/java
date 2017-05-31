@@ -10,7 +10,7 @@ Hieronder een overzicht van de te gebruiken controls. Zoek gerust in de document
 
 ### Container controls
 
-Container controls dienen om ander controls in te stoppen. Je kan ook een container in een andere container stoppen.   
+Container controls dienen om ander controls in te stoppen. Je kan ook een container in een andere container stoppen.  
 Welke containers gebruiken we?
 
 * `AnchorPane`: de eenvoudigst te gebruiken control, aangezien alle controls die je hierin stopt blijven staan op de bedoelde plaats.
@@ -19,11 +19,27 @@ Welke containers gebruiken we?
 
 ### Standard Controls
 
-* `Button`: als je hierop klikt, moet de methode gespecifiëerd bij on Action uitgevoerd worden.
+* `Button`: als je hierop klikt, moet de methode gespecifiëerd bij on Action uitgevoerd worden. Met `getText()` kan je de tekst op de knop als String opvragen, met `setText(String value)` kan je de tekst opnieuw instellen.
 * `Combobox`: een keuzelijst. Specifier in de controller klasse het type variabelen \(tussen &lt; en &gt;\) waarmee deze lijst gevuld is.
+
   ```java
   public ComboBox<Integer> leeftijden;
   ```
+
+  Een item aan een ComboBoxtoevoegen doe je zo:  
+  `combobox.getItems().add(5); //igv. een Integer ComboBox   
+   combobox.getItems().add(5); //igv. een String`  
+
+
+  Het juiste item selecteren doe je als volgt:
+
+  ```java
+  combobox.getSelectionModel().select(3); //selecteer het item met index 3
+  combobox.getSelectionModel().select("Tomas"); //selecteer het String object met waarde "Tomas"
+  combobox.getSelectionModel().selectFirst(); //selecteert het eerste item.
+  ```
+
+  Net zoals bij een Button kan je met on Action kiezen welke void methode opgeroepen moet worden in de Controller klasse als je een item selecteert.
 
 * 
 
