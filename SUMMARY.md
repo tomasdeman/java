@@ -1,6 +1,7 @@
 # Summary
 
 * [Introductie](README.md)
+* [JavaFX: inleiding](javafx-inleiding.md)
 * [Project: hangman](hangman.md)
 * [Arrays](arrays.md)
 * [ArrayLists](arraylists.md)
