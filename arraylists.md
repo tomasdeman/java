@@ -123,5 +123,12 @@ Creëer een klasse Afspeellijst met twee velden: titel en nummers \(=lijst van l
 * Maak een methode die de informatie van de afspeellijst afdrukt op het scherm \(printNummers\)
 * Maak een functiemethode die de duur van de afspeellijst teruggeeft \(getDuur\).
 
+#### Deel 3: output
+Als de afspeellijst afgedrukt wordt, moet deze er als volgt uitzien:
+```
+Afspeellijst Beetje vanalles
+Aantal nummers: 2
 
-
+Stairway to heaven(7:59)
+Ballad of a thin man(5:58)
+```
