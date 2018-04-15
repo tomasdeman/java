@@ -105,18 +105,30 @@ for(String item: stringList){
 
 ## Oefening: muziekalbum/afspeellijst
 
-#### Deel 1: JavaFX venster
+In deze oefening maken we een programma dat afspeellijsten van muziek kan bijhouden.
+
+#### JavaFX venster
 
 Het venster om nummers in te geven en een afdruk op te starten kan er als volgt uitzien:
 ![](/assets/afspeellijst.png)
 
-#### Deel 1: klasse Nummer
+#### Output
+Als de afspeellijst uiteindelijk afgedrukt wordt, moet deze er als volgt uitzien:
+```
+Afspeellijst Beetje vanalles
+Aantal nummers: 2
+
+Stairway to heaven(7:59)
+Ballad of a thin man(5:58)
+```
+
+#### klasse Nummer
 
 * Creëer een klasse _Nummer_ \(die 1 liedje voorstelt\) met de velden: titel, duur \(in seconden\).
 * Schrijf een constructor, accessors en mutators voor deze twee velden.
 * Schrijf een methode getNummer\(\) die een String teruggeeft in de vorm: titel \(minuten:seconden\)
 
-#### Deel 2: klasse Afspeellijst
+#### klasse Afspeellijst
 
 Creëer een klasse Afspeellijst met twee velden: titel en nummers \(=lijst van liedjes\)
 
@@ -127,13 +139,3 @@ Creëer een klasse Afspeellijst met twee velden: titel en nummers \(=lijst van l
 * Schrijf een methode die weergeeft hoeveel nummers er in de lijst zitten \(getAantalNummers\)
 * Maak een methode die de informatie van de afspeellijst afdrukt op het scherm \(printNummers\)
 * Maak een functiemethode die de duur van de afspeellijst teruggeeft \(getDuur\).
-
-#### Deel 3: output
-Als de afspeellijst afgedrukt wordt, moet deze er als volgt uitzien:
-```
-Afspeellijst Beetje vanalles
-Aantal nummers: 2
-
-Stairway to heaven(7:59)
-Ballad of a thin man(5:58)
-```
