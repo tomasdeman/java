@@ -113,15 +113,15 @@ for(String item: stringList){
 
 #### Deel 2: klasse Afspeellijst
 
-Creëer een klasse Afspellijst met drie velden: artiest, titel en nummers \(=lijst van liedjes\)
+Creëer een klasse Afspeellijst met twee velden: titel en nummers \(=lijst van liedjes\)
 
-* Schrijf een constructor die titel en artiest opvraagt en de velden initialiseert.
-* Maak accessors en mutators voor de velden artiest en titel
-* Schrijf \(twee\) methoden die ervoor zorgen dat nummers achteraan kunnen toegevoegd worden \(addNummer\). Bekijk de documentatie voor de details.
+* Schrijf een constructor die titel en de velden initialiseert.
+* Maak een accessor en mutator voor titel
+* Schrijf \(twee\) methoden die ervoor zorgen dat nummers achteraan kunnen toegevoegd worden \(addNummer\).
 * en zorg ervoor dat de nummers kunnen opgevraagd worden op index \(getNummer\)
-* Schrijf een methode die weergeeft hoeveel nummers er op het album aanwezig zijn \(getAantalNummers\)
-* Maak een methode die de informatie van het album afdrukt op het scherm \(printNummers\)
-* Maak een functiemethode die de duur van het album teruggeeft \(getDuur\).
+* Schrijf een methode die weergeeft hoeveel nummers er in de lijst zitten \(getAantalNummers\)
+* Maak een methode die de informatie van de afspeellijst afdrukt op het scherm \(printNummers\)
+* Maak een functiemethode die de duur van de afspeellijst teruggeeft \(getDuur\).
 
 
 
