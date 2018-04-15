@@ -108,7 +108,7 @@ for(String item: stringList){
 #### Deel 1: JavaFX venster
 
 Het venster om nummers in te geven en een afdruk op te starten kan er als volgt uitzien:
-
+![](/assets/Screenshot 2018-04-15 21.52.21.png)
 
 #### Deel 1: klasse Nummer
 
