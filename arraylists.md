@@ -111,9 +111,9 @@ for(String item: stringList){
 * Schrijf een constructor, accessors en mutators voor deze twee velden.
 * Schrijf een methode getNummer\(\) die een String teruggeeft in de vorm: titel \(minuten:seconden\)
 
-#### Deel 2: klasse Album
+#### Deel 2: klasse Afspeellijst
 
-Creëer een klasse Album met drie velden: artiest, titel en nummers \(=lijst van liedjes\)
+Creëer een klasse Afspellijst met drie velden: artiest, titel en nummers \(=lijst van liedjes\)
 
 * Schrijf een constructor die titel en artiest opvraagt en de velden initialiseert.
 * Maak accessors en mutators voor de velden artiest en titel
