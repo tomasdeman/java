@@ -105,6 +105,11 @@ for(String item: stringList){
 
 ## Oefening: muziekalbum/afspeellijst
 
+#### Deel 1: JavaFX venster
+
+Het venster om nummers in te geven en een afdruk op te starten kan er als volgt uitzien:
+
+
 #### Deel 1: klasse Nummer
 
 * Creëer een klasse _Nummer_ \(die 1 liedje voorstelt\) met de velden: titel, duur \(in seconden\).
