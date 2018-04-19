@@ -162,7 +162,7 @@ Zoals je ziet bevatten deze methodes nog geen code. Deze zullen verplicht worden
 Je kan ook bepaalde methodes implementeren in de superklasse en andere abstract maken.
 
 ```java
-abstract public class AbstractClass
+public abstract class AbstractClass
 {
     abstract public void abstractMethod();
 
